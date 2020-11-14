@@ -1,6 +1,7 @@
 # German (Switzerland)
 
 ### `Faker\Provider\de_CH\Person`
+
 ```php
 <?php
 

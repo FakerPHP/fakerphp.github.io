@@ -3,12 +3,24 @@ site_description: Documentation for FakerPHP / Faker
 
 theme:
   name: material
+  font:
+    text: 'Nunito'
+    code: 'Fira Code'
   palette:
-    scheme: preference
+    scheme: default
+    primary: blue
+    accent: blue
   language: en
+  features:
+    - navigation.instant
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/FakerPHP/Faker
       name: Faker
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
