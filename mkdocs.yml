@@ -1,6 +1,9 @@
 site_name: FakerPHP / Faker
 site_description: Documentation for FakerPHP / Faker
 
+repo_url: https://github.com/FakerPHP/fakerphp.github.io
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   font:
