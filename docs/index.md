@@ -549,6 +549,8 @@ $book->setPrice($faker->randomNumber(2));
 
 ## Language specific formatters
 
+Supported locales can be found under the "Locales" header on the left.
+
 ### Misnamed locales
 
 | Current name | Correct name |
