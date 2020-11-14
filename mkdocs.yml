@@ -6,3 +6,9 @@ theme:
   palette:
     scheme: preference
   language: en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/FakerPHP/Faker
+      name: Faker
