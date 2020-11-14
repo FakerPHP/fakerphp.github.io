@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: FakerPHP / Faker
+site_description: Documentation for FakerPHP / Faker
+
+theme:
+  name: material
+  palette:
+    scheme: preference
+  language: en
