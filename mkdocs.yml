@@ -23,6 +23,9 @@ extra:
       link: https://github.com/FakerPHP/Faker
       name: Faker
 
+plugins:
+  - search
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
