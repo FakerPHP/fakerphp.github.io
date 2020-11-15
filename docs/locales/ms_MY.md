@@ -3,8 +3,6 @@
 ### `Faker\Provider\ms_MY\Address`
 
 ```php
-<?php
-
 // Generates a random Malaysian township
 echo $faker->township; // "Taman Bahagia"
 
@@ -15,8 +13,6 @@ echo $faker->townState; // "55100 Bukit Bintang, Kuala Lumpur"
 ### `Faker\Provider\ms_MY\Miscellaneous`
 
 ```php
-<?php
-
 // Generates a random vehicle license plate number
 echo $faker->jpjNumberPlate; // "WPL 5169"
 ```
@@ -24,8 +20,6 @@ echo $faker->jpjNumberPlate; // "WPL 5169"
 ### `Faker\Provider\ms_MY\Payment`
 
 ```php
-<?php
-
 // Generates a random Malaysian bank
 echo $faker->bank; // "Maybank"
 
@@ -42,8 +36,6 @@ echo $faker->swiftCode; // "MBBEMYKLXXX"
 ### `Faker\Provider\ms_MY\Person`
 
 ```php
-<?php
-
 // Generates a random personal identity card (myKad) number
 echo $faker->myKadNumber($gender = null|'male'|'female', $hyphen = null|true|false); // "710703471796"
 ```
@@ -51,8 +43,6 @@ echo $faker->myKadNumber($gender = null|'male'|'female', $hyphen = null|true|fal
 ### `Faker\Provider\ms_MY\PhoneNumber`
 
 ```php
-<?php
-
 // Generates a random Malaysian mobile number
 echo $faker->mobileNumber($countryCodePrefix = null|true|false, $formatting = null|true|false); // "+6012-705 3767"
 

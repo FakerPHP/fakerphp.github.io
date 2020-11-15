@@ -3,8 +3,6 @@
 ### `Faker\Provider\ja_JP\Person`
 
 ```php
-<?php
-
 // Generates a 'kana' name
 echo $faker->kanaName($gender = null|'male'|'female') // "アオタ ミノル"
 

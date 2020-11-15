@@ -3,8 +3,6 @@
 ### `Faker\Provider\en_NZ\Phone`
 
 ```php
-<?php
-
 // Generates a cell (mobile) phone number
 echo $faker->mobileNumber; // "021 123 4567"
 

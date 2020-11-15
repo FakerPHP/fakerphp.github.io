@@ -3,8 +3,6 @@
 ### `Faker\Provider\fr_FR\Address`
 
 ```php
-<?php
-
 // Generates a random department name
 echo $faker->departmentName; // "Haut-Rhin"
 
@@ -24,8 +22,6 @@ echo $faker->secondaryAddress; // "Bat. 961"
 ### `Faker\Provider\fr_FR\Company`
 
 ```php
-<?php
-
 // Generates a random SIREN number
 echo $faker->siren; // 082 250 104
 
@@ -36,8 +32,6 @@ echo $faker->siret; // 347 355 708 00224
 ### `Faker\Provider\fr_FR\Payment`
 
 ```php
-<?php
-
 // Generates a random VAT
 echo $faker->vat; // FR 12 123 456 789
 ```
@@ -45,8 +39,6 @@ echo $faker->vat; // FR 12 123 456 789
 ### `Faker\Provider\fr_FR\Person`
 
 ```php
-<?php
-
 // Generates a random NIR / Sécurité Sociale number
 echo $faker->nir; // 1 88 07 35 127 571 - 19
 ```
@@ -54,8 +46,6 @@ echo $faker->nir; // 1 88 07 35 127 571 - 19
 ### `Faker\Provider\fr_FR\PhoneNumber`
 
 ```php
-<?php
-
 // Generates phone numbers
 echo $faker->phoneNumber; // +33 (0)1 67 97 01 31
 echo $faker->mobileNumber; // +33 6 21 12 72 84
