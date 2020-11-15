@@ -10,12 +10,12 @@ echo $faker->departmentName; // "Haut-Rhin"
 echo $faker->departmentNumber; // "2B"
 
 // Generates a random department info (department number => department name)
-$faker->department; // array('18' => 'Cher');
+$faker->department; // ['18' => 'Cher'];
 
 // Generates a random region
 echo $faker->region; // "Saint-Pierre-et-Miquelon"
 
-// Generates a random appartement,stair
+// Generates a random appartement, stair
 echo $faker->secondaryAddress; // "Bat. 961"
 ```
 

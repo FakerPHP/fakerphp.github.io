@@ -76,7 +76,7 @@ Faker provides three special providers, `unique()`, `optional()`, and `valid()`,
 
 ```php
 // unique() forces providers to return unique values
-$values = array();
+$values = [];
 for ($i = 0; $i < 10; $i++) {
     // get a random digit, but always a new one, to avoid duplicates
     $values []= $faker->unique()->randomDigit;
@@ -84,7 +84,7 @@ for ($i = 0; $i < 10; $i++) {
 print_r($values); // [4, 1, 8, 5, 0, 2, 6, 9, 7, 3]
 
 // providers with a limited range will throw an exception when no new unique value can be generated
-$values = array();
+$values = [];
 try {
     for ($i = 0; $i < 10; $i++) {
         $values []= $faker->unique()->randomDigitNotNull;
@@ -98,7 +98,7 @@ $faker->unique($reset = true)->randomDigitNotNull; // will not throw OverflowExc
 // tip: unique() keeps one array of values per provider
 
 // optional() sometimes bypasses the provider to return a default value instead (which defaults to NULL)
-$values = array();
+$values = [];
 for ($i = 0; $i < 10; $i++) {
     // get a random digit, but also null sometimes
     $values []= $faker->optional()->randomDigit;
@@ -116,7 +116,7 @@ $faker->optional($weight = 0.5, $default = false)->randomDigit; // 50% chance of
 $faker->optional($weight = 0.9, $default = 'abc')->word; // 10% chance of 'abc'
 
 // valid() only accepts valid values according to the passed validator functions
-$values = array();
+$values = [];
 $evenValidator = function($digit) {
 	return $digit % 2 === 0;
 };
@@ -182,9 +182,9 @@ $insertedPKs = $populator->execute();
 The populator uses name and column type guessers to populate each column with relevant data. For instance, Faker populates a column named `first_name` using the `firstName` formatter, and a column with a `TIMESTAMP` type using the `dateTime` formatter. The resulting entities are therefore coherent. If Faker misinterprets a column name, you can still specify a custom closure to be used for populating a particular column, using the third argument to `addEntity()`:
 
 ```php
-$populator->addEntity('Book', 5, array(
+$populator->addEntity('Book', 5, [
   'ISBN' => function() use ($generator) { return $generator->ean13(); }
-));
+]);
 ```
 
 In this example, Faker will guess a formatter for all columns except `ISBN`, for which the given anonymous function will be used.
@@ -194,20 +194,20 @@ In this example, Faker will guess a formatter for all columns except `ISBN`, for
     To ignore some columns, specify `null` for the column names in the third argument of `addEntity()`. This is usually necessary for columns added by a behavior:
 
     ```php
-    $populator->addEntity('Book', 5, array(
+    $populator->addEntity('Book', 5, [
       'CreatedAt' => null,
       'UpdatedAt' => null,
-    ));
+    ]);
     ```
 
 Of course, Faker does not populate auto-incremented primary keys. In addition, `Faker\ORM\Propel\Populator::execute()` returns the list of inserted PKs, indexed by class:
 
 ```php
 print_r($insertedPKs);
-// array(
-//   'Author' => (34, 35, 36, 37, 38),
-//   'Book'   => (456, 457, 458, 459, 470, 471, 472, 473, 474, 475)
-// )
+// [
+//   'Author' => [34, 35, 36, 37, 38],
+//   'Book'   => [456, 457, 458, 459, 470, 471, 472, 473, 474, 475],
+// ]
 ```
 
 ???+ note
@@ -219,9 +219,11 @@ In the previous example, the `Book` and `Author` models share a relationship. Si
 Lastly, if you want to execute an arbitrary function on an entity before insertion, use the fourth argument of the `addEntity()` method:
 
 ```php
-$populator->addEntity('Book', 5, array(), array(
-  function($book) { $book->publish(); },
-));
+$populator->addEntity('Book', 5, [], [
+    function($book) {
+        $book->publish(); 
+    },
+]);
 ```
 
 ## Seeding the Generator
@@ -252,9 +254,9 @@ echo $faker->name; // 'Jess Mraz I';
 
     ```php
     // bad
-    $faker->realText(rand(10,20));
+    $faker->realText(rand(10, 20));
     // good
-    $faker->realText($faker->numberBetween(10,20));
+    $faker->realText($faker->numberBetween(10, 20));
     ```
 
 ## Faker Internals: Understanding Providers
