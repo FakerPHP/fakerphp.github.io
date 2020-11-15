@@ -3,8 +3,6 @@
 ### `Faker\Provider\en_ZA\Company`
 
 ```php
-<?php
-
 // Generates a random company registration number
 echo $faker->companyNumber; // 1999/789634/01
 ```
@@ -12,8 +10,6 @@ echo $faker->companyNumber; // 1999/789634/01
 ### `Faker\Provider\en_ZA\Person`
 
 ```php
-<?php
-
 // Generates a random national identification number
 echo $faker->idNumber; // 6606192211041
 
@@ -24,8 +20,6 @@ echo $faker->licenceCode; // EB
 ### `Faker\Provider\en_ZA\PhoneNumber`
 
 ```php
-<?php
-
 // Generates a special rate toll free phone number
 echo $faker->tollFreeNumber; // 0800 555 5555
 

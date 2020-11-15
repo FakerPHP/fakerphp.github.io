@@ -3,8 +3,6 @@
 ### `Faker\Provider\pt_BR\Address`
 
 ```php
-<?php
-
 // Generates a random region name
 echo $faker->region; // 'Nordeste'
 
@@ -15,8 +13,6 @@ echo $faker->regionAbbr; // 'NE'
 ### `Faker\Provider\pt_BR\PhoneNumber`
 
 ```php
-<?php
-
 echo $faker->areaCode;  // 21
 echo $faker->cellphone; // 9432-5656
 echo $faker->landline;  // 2654-3445
@@ -38,8 +34,6 @@ echo $faker->phoneNumberCleared;    // not formatted, random landline or cellpho
 ### `Faker\Provider\pt_BR\Person`
 
 ```php
-<?php
-
 // The name generator may include double first or double last names, plus title and suffix
 echo $faker->name; // 'Sr. Luis Adriano Sepúlveda Filho'
 
@@ -53,8 +47,6 @@ echo $faker->rg(false);  // '844057363'
 ### `Faker\Provider\pt_BR\Company`
 
 ```php
-<?php
-
 // Generates a Brazilian formatted and valid CNPJ
 echo $faker->cnpj;        // '23.663.478/0001-24'
 echo $faker->cnpj(false); // '23663478000124'

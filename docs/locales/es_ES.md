@@ -3,8 +3,6 @@
 ### `Faker\Provider\es_ES\Person`
 
 ```php
-<?php
-
 // Generates a Documento Nacional de Identidad (DNI) number
 echo $faker->dni; // '77446565E'
 
@@ -15,7 +13,6 @@ echo $faker->licenceCode; // B
 ### `Faker\Provider\es_ES\Payment`
 
 ```php
-<?php
 // Generates a Código de identificación Fiscal (CIF) number
 echo $faker->vat;           // "A35864370"
 ```
@@ -23,8 +20,6 @@ echo $faker->vat;           // "A35864370"
 ### `Faker\Provider\es_ES\PhoneNumber`
 
 ```php
-<?php
-
 // Generates a special rate toll free phone number
 echo $faker->tollFreeNumber; // 900 123 456
 

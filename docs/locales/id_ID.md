@@ -3,8 +3,6 @@
 ### `Faker\Provider\id_ID\Person`
 
 ```php
-<?php
-
 // Generates a random Nomor Induk Kependudukan (NIK)
 
 // first argument is gender, either Person::GENDER_MALE or Person::GENDER_FEMALE, if none specified random gender is used
