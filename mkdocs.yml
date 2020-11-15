@@ -1,8 +1,9 @@
 site_name: FakerPHP / Faker
 site_description: Documentation for FakerPHP / Faker
 
-repo_url: https://github.com/FakerPHP/fakerphp.github.io
-edit_uri: edit/main/docs/
+repo_name: FakerPHP/Faker
+repo_url: https://github.com/FakerPHP/Faker
+edit_uri: https://github.com/FakerPHP/fakerphp.github.io/edit/main/docs/
 
 theme:
   name: material
@@ -13,6 +14,8 @@ theme:
     scheme: default
     primary: blue
     accent: blue
+  icon:
+    repo: fontawesome/brands/github
   language: en
   features:
     - navigation.instant
@@ -21,7 +24,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/FakerPHP/Faker
-      name: Faker
+      name: Faker repository
+    - icon: fontawesome/regular/file-alt
+      link: https://github.com/FakerPHP/fakerphp.github.io
+  name: Docs repository
 
 plugins:
   - search
