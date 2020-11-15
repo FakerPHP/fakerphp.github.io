@@ -27,6 +27,11 @@ plugins:
   - search
 
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
   - pymdownx.superfences
   - pymdownx.keys
