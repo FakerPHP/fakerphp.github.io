@@ -3,6 +3,12 @@
 Each of the generator properties (like `name`, `address`, and `lorem`) are called "formatters". A faker generator has
 many of them, packaged in "providers". Here is a list of the bundled formatters in the default locale.
 
+In all examples, a faker instance is made using the `en_US` default locale.
+
+```php
+$faker = \Faker\Factory::create();
+```
+
 ### Numbers and Strings (`Faker\Provider\Base`)
 
 #### # `randomDigit`
@@ -206,15 +212,59 @@ echo $faker->regexify('[A-Z]{5}[0-4]{3}');
 // 'DRSQX201', 'FUDPA404', 'CQVIU411'
 ```
 
-### `Faker\Provider\Lorem`
+### Text and Paragraphs (`Faker\Provider\Lorem`)
+
+#### # `word`
+
+Generate a string containing random single word.
 
 ```php
-word                                             // 'aut'
-words($nb = 3, $asText = false)                  // ['porro', 'sed', 'magni']
-sentence($nbWords = 6, $variableNbWords = true)  // 'Sit vitae voluptas sint non voluptates.'
-sentences($nb = 3, $asText = false)              // ['Optio quos qui illo error.', 'Laborum vero a officia id corporis.', 'Saepe provident esse hic eligendi.']
-paragraph($nbSentences = 3, $variableNbSentences = true) // 'Ut ab voluptas sed a nam. Sint autem inventore aut officia aut aut blanditiis. Ducimus eos odit amet et est ut eum.'
-paragraphs($nb = 3, $asText = false)             // ['Quidem ut sunt et quidem est accusamus aut. Fuga est placeat rerum ut. Enim ex eveniet facere sunt.', 'Aut nam et eum architecto fugit repellendus illo. Qui ex esse veritatis.', 'Possimus omnis aut incidunt sunt. Asperiores incidunt iure sequi cum culpa rem. Rerum exercitationem est rem.']
+echo $faker->word();
+
+// 'molestiae', 'occaecati', 'distinctio'
+```
+
+#### # `words`
+
+Generate an array containing a specified amount of random words.
+
+Optionally, a second boolean parameter can be supplied. When true, a string will be returned instead of an array.
+
+```php
+echo $faker->words();
+
+// ['praesentium', 'possimus', 'modi']
+
+echo $faker->words(5);
+
+// ['molestias', 'repellendus', 'qui', 'temporibus', 'ut']
+
+echo $faker->words(3, true);
+
+// 'placeat vero saepe'
+```
+
+#### # `sentence`
+
+Generate a sentence containing a given amount of words. By default, `6` words is used.
+
+Optionally, a second boolean parameter can be supplied. When `false`, only sentences with the given amount of words will
+be generated. By default, `sentence` will deviate from the given amount by +/- 40%.
+
+```php
+echo $faker->sentence();
+
+// 'Sit vitae voluptas sint non voluptates.'
+
+echo $faker->sentence(3);
+
+// 'Laboriosam non voluptas.'
+```
+
+```php
+sentences($nb = 3, $asText = false);              // ['Optio quos qui illo error.', 'Laborum vero a officia id corporis.', 'Saepe provident esse hic eligendi.']
+paragraph($nbSentences = 3, $variableNbSentences = true); // 'Ut ab voluptas sed a nam. Sint autem inventore aut officia aut aut blanditiis. Ducimus eos odit amet et est ut eum.'
+paragraphs($nb = 3, $asText = false);             // ['Quidem ut sunt et quidem est accusamus aut. Fuga est placeat rerum ut. Enim ex eveniet facere sunt.', 'Aut nam et eum architecto fugit repellendus illo. Qui ex esse veritatis.', 'Possimus omnis aut incidunt sunt. Asperiores incidunt iure sequi cum culpa rem. Rerum exercitationem est rem.']
 text($maxNbChars = 200)                          // 'Fuga totam reiciendis qui architecto fugiat nemo. Consequatur recusandae qui cupiditate eos quod.'
 ```
 
