@@ -88,6 +88,8 @@ nav:
       - formatters/numbers-and-strings.md
       - formatters/text-and-paragraphs.md
       - formatters/date-and-time.md
+      - formatters/internet.md
+      - formatters/user-agent.md
   - 'Locales': *locales
   - third-party.md
 
