@@ -69,7 +69,7 @@ realText($maxNbChars = 200, $indexSize = 2) // "And yet I wish you could manage 
 
 ### `Faker\Provider\DateTime`
 
-```php
+```
 unixTime($max = 'now')                // 58781813
 dateTime($max = 'now', $timezone = null) // DateTime('2008-04-25 08:37:17', 'UTC')
 dateTimeAD($max = 'now', $timezone = null) // DateTime('1800-04-29 20:38:49', 'Europe/Paris')
@@ -91,9 +91,6 @@ year($max = 'now')                    // '1993'
 century                               // 'VI'
 timezone                              // 'Europe/Paris'
 ```
-
-Methods accepting a `$timezone` argument default to `date_default_timezone_get()`. You can pass a custom timezone string
-to each method, or define a custom timezone for all time methods at once using `$faker::setDefaultTimezone($timezone)`.
 
 ### `Faker\Provider\Internet`
 

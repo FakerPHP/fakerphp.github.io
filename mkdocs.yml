@@ -11,7 +11,7 @@ theme:
     text: 'Nunito'
     code: 'Fira Code'
   palette:
-    scheme: default
+    scheme: preference
     primary: blue
     accent: blue
   icon:
@@ -81,6 +81,16 @@ extra:
 plugins:
   - search: { }
 
+nav:
+  - index.md
+  - formatters.md
+  - 'Formatters':
+      - formatters/numbers-and-strings.md
+      - formatters/text-and-paragraphs.md
+      - formatters/date-and-time.md
+  - 'Locales': *locales
+  - third-party.md
+
 markdown_extensions:
   - admonition: { }
   - toc:
@@ -94,13 +104,3 @@ markdown_extensions:
             startinline: true
   - pymdownx.superfences: { }
   - pymdownx.keys: { }
-
-
-nav:
-  - index.md
-  - formatters.md
-  - 'Formatters':
-      - formatters/numbers-and-strings.md
-      - formatters/text-and-paragraphs.md
-  - 'Locales': *locales
-  - third-party.md
