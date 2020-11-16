@@ -34,7 +34,7 @@ You can also load `Fakers` shipped `PSR-0` autoloader
 require_once '/path/to/Faker/src/autoload.php';
 ```
 
-*alternatively, you can use any another PSR-4 compliant autoloader*
+*alternatively, you can use any other PSR-4 compliant autoloader*
 
 ### Create fake data
 
@@ -144,7 +144,7 @@ $faker->optional()->passthrough(mt_rand(5, 15));
 ## Localization
 
 `Faker\Factory` can take a locale as an argument, to return localized data. If no localized provider is found, the
-factory fallbacks to the default locale (en_US).
+factory falls back to the default locale (en_US).
 
 ```php
 // create a French faker
@@ -228,7 +228,7 @@ $populator->addEntity('Book', 5, [], [
 
 ## Seeding the Generator
 
-You may want to get always the same generated data - for instance when using Faker for unit testing purposes. The generator offers a `seed()` method, which seeds the random number generator. Calling the same script twice with the same seed produces the same results.
+You may want to always get the same generated data - for instance when using Faker for unit testing purposes. The generator offers a `seed()` method, which seeds the random number generator. Calling the same script twice with the same seed produces the same results.
 
 ```php
 $faker = Faker\Factory::create();
