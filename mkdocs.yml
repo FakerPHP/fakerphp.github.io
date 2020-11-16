@@ -27,19 +27,80 @@ extra:
       name: Faker repository
     - icon: fontawesome/regular/file-alt
       link: https://github.com/FakerPHP/fakerphp.github.io
-  name: Docs repository
+      name: Docs repository
+  locales: &locales
+    - locales/ar_SA.md
+    - locales/bg_BG.md
+    - locales/cs_CZ.md
+    - locales/da_DK.md
+    - locales/de_AT.md
+    - locales/de_CH.md
+    - locales/de_DE.md
+    - locales/en_HK.md
+    - locales/en_NG.md
+    - locales/en_NZ.md
+    - locales/en_US.md
+    - locales/en_ZA.md
+    - locales/es_ES.md
+    - locales/es_PE.md
+    - locales/es_VE.md
+    - locales/fa_IR.md
+    - locales/fi_FI.md
+    - locales/fr_BE.md
+    - locales/fr_CH.md
+    - locales/fr_FR.md
+    - locales/he_IL.md
+    - locales/hr_HR.md
+    - locales/hu_HU.md
+    - locales/id_ID.md
+    - locales/it_CH.md
+    - locales/it_IT.md
+    - locales/ja_JP.md
+    - locales/ka_GE.md
+    - locales/kk_KZ.md
+    - locales/ko_KR.md
+    - locales/lt_LT.md
+    - locales/lv_LV.md
+    - locales/ms_MY.md
+    - locales/nb_NO.md
+    - locales/ne_NP.md
+    - locales/nl_BE.md
+    - locales/nl_NL.md
+    - locales/pl_PL.md
+    - locales/pt_BR.md
+    - locales/pt_PT.md
+    - locales/ro_MD.md
+    - locales/ro_RO.md
+    - locales/ru_RU.md
+    - locales/sv_SE.md
+    - locales/tr_TR.md
+    - locales/uk_UA.md
+    - locales/zh_Hans_CN.md
+    - locales/zh_Hant_TW.md
 
 plugins:
-  - search
+  - search: { }
 
 markdown_extensions:
-  - admonition: {}
-  - pymdownx.details: {}
+  - admonition: { }
+  - toc:
+      permalink: '#'
+  - pymdownx.details: { }
   - pymdownx.highlight:
       extend_pygments_lang:
         - name: php
           lang: php
           options:
             startinline: true
-  - pymdownx.superfences: {}
-  - pymdownx.keys: {}
+  - pymdownx.superfences: { }
+  - pymdownx.keys: { }
+
+
+nav:
+  - index.md
+  - formatters.md
+  - 'Formatters':
+      - formatters/numbers-and-strings.md
+      - formatters/text-and-paragraphs.md
+  - 'Locales': *locales
+  - third-party.md
