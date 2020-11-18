@@ -97,6 +97,8 @@ nav:
       - formatters/uuid.md
       - formatters/barcode.md
       - formatters/miscellaneous.md
+      - formatters/biased.md
+      - formatters/html-lorem.md
   - 'Locales': *locales
   - third-party.md
 
