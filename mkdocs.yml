@@ -93,6 +93,7 @@ nav:
       - formatters/payment.md
       - formatters/color.md
       - formatters/file.md
+      - formatters/image.md
   - 'Locales': *locales
   - third-party.md
 
