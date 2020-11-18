@@ -67,42 +67,6 @@ jobTitle                // 'Cashier'
 realText($maxNbChars = 200, $indexSize = 2) // "And yet I wish you could manage it?) 'And what are they made of?' Alice asked in a shrill, passionate voice. 'Would YOU like cats if you were never even spoke to Time!' 'Perhaps not,' Alice replied."
 ```
 
-### `Faker\Provider\Payment`
-
-```php
-creditCardType          // 'MasterCard'
-creditCardNumber        // '4485480221084675'
-creditCardExpirationDate // 04/13
-creditCardExpirationDateString // '04/13'
-creditCardDetails       // ['MasterCard', '4485480221084675', 'Aleksander Nowak', '04/13']
-// Generates a random IBAN. Set $countryCode to null for a random country
-iban($countryCode)      // 'IT31A8497112740YZ575DJ28BP4'
-swiftBicNumber          // 'RZTIAT22263'
-```
-
-### `Faker\Provider\Color`
-
-```php
-hexcolor               // '#fa3cc2'
-rgbcolor               // '0,255,122'
-rgbColorAsArray        // [0, 255, 122]
-rgbCssColor            // 'rgb(0, 255, 122)'
-safeColorName          // 'fuchsia'
-colorName              // 'Gainsbor'
-hslColor               // '340,50,20'
-hslColorAsArray        // [340, 50, 20]
-```
-
-### `Faker\Provider\File`
-
-```php
-fileExtension          // 'avi'
-mimeType               // 'video/x-msvideo'
-// Copy a random file from the source to the target directory and returns the fullpath or filename
-file($sourceDir = '/tmp', $targetDir = '/tmp') // '/path/to/targetDir/13b73edae8443990be1aa8f1a483bc27.jpg'
-file($sourceDir, $targetDir, false) // '13b73edae8443990be1aa8f1a483bc27.jpg'
-```
-
 ### `Faker\Provider\Image`
 
 ```php
