@@ -95,6 +95,7 @@ nav:
       - formatters/file.md
       - formatters/image.md
       - formatters/uuid.md
+      - formatters/barcode.md
   - 'Locales': *locales
   - third-party.md
 

@@ -67,21 +67,6 @@ jobTitle                // 'Cashier'
 realText($maxNbChars = 200, $indexSize = 2) // "And yet I wish you could manage it?) 'And what are they made of?' Alice asked in a shrill, passionate voice. 'Would YOU like cats if you were never even spoke to Time!' 'Perhaps not,' Alice replied."
 ```
 
-### `Faker\Provider\Uuid`
-
-```php
-uuid                   // '7e57d004-2b97-0e7a-b45f-5387367791cd'
-```
-
-### `Faker\Provider\Barcode`
-
-```php
-ean13          // '4006381333931'
-ean8           // '73513537'
-isbn13         // '9790404436093'
-isbn10         // '4881416324'
-```
-
 ### `Faker\Provider\Miscellaneous`
 
 ```php
