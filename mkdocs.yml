@@ -90,6 +90,7 @@ nav:
       - formatters/date-and-time.md
       - formatters/internet.md
       - formatters/user-agent.md
+      - formatters/payment.md
   - 'Locales': *locales
   - third-party.md
 
