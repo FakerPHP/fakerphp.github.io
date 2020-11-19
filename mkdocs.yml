@@ -108,10 +108,14 @@ markdown_extensions:
       permalink: '#'
   - pymdownx.details: { }
   - pymdownx.highlight:
-      extend_pygments_lang:
-        - name: php
-          lang: php
-          options:
-            startinline: true
+      use_pygments: false
   - pymdownx.superfences: { }
   - pymdownx.keys: { }
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js
+  - javascripts/highlight.js
+
+# Themes can be found here: <https://github.com/highlightjs/highlight.js/tree/master/src/styles>
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css
