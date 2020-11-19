@@ -5,7 +5,11 @@
 Generate a random `integer`, with a bias using a given function.
 
 ```php
-function biasedNumberBetween(int $min = 0, int $max = 100, string $function = 'sqrt'): int;
+function biasedNumberBetween(
+    int $min = 0, 
+    int $max = 100, 
+    string $function = 'sqrt'
+): int;
 ```
 
 Examples:

@@ -10,7 +10,7 @@ To provide a less verbose explanation of this function, we'll use a function def
 function imageUrl(
     int $width = 640,
     int $height = 480,
-    ?string $category = null, // used as text on the image
+    ?string $category = null, /* used as text on the image */
     bool $randomize = true,
     ?string $word = null,
     bool $gray = false
