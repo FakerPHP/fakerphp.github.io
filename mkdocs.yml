@@ -118,4 +118,4 @@ extra_javascript:
 
 # Themes can be found here: <https://github.com/highlightjs/highlight.js/tree/master/src/styles>
 extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/ocean.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css
