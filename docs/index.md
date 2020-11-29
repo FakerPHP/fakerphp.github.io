@@ -158,7 +158,7 @@ for ($i = 0; $i < 3; $i++) {
 // Roger Le Voisin
 ```
 
-You can check available Faker locales in the source code, [under the `Provider` directory](https://github.com/FakerPHP/Faker/tree/1.10/src/Faker/Provider). The localization of Faker is an ongoing process, for which we need your help. Don't hesitate to create localized providers to your own locale and submit a PR!
+You can check available Faker locales in the source code, [under the `Provider` directory](https://github.com/FakerPHP/Faker/tree/main/src/Faker/Provider). The localization of Faker is an ongoing process, for which we need your help. Don't hesitate to create localized providers to your own locale and submit a PR!
 
 ## Populating Entities Using an ORM or an ODM
 
