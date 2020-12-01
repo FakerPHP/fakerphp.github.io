@@ -46,9 +46,10 @@ longitude($min = -180, $max = 180)  // 86.211205
 ### `Faker\Provider\en_US\PhoneNumber`
 
 ```php
-phoneNumber             // '201-886-0269 x3767'
-tollFreePhoneNumber     // '(888) 937-7238'
-e164PhoneNumber     // '+27113456789'
+phoneNumber                 // '827-986-5852'
+phoneNumberWithExtension    // '201-886-0269 x3767'
+tollFreePhoneNumber         // '(888) 937-7238'
+e164PhoneNumber             // '+27113456789'
 ```
 
 ### `Faker\Provider\en_US\Company`
