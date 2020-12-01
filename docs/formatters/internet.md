@@ -8,7 +8,7 @@ Generate an email address.
 echo $faker->email();
 
 // 'orval.treutel@blick.com', 'hickle.lavern@erdman.com'
-`````
+```
 
 ## `safeEmail`
 
