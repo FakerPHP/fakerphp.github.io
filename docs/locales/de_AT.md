@@ -16,6 +16,6 @@ echo $faker->vat(false);    // "ATU12345678" - unspaced Austrian Value Added Tax
 ### `Faker\Provider\at_AT\Person`
 
 ```php
-echo $faker->ssn;                                           // "3130231169" - Austrian Social Security number
-echo $faker->ssn(new \DateTime('2010-09-08 06:05:04'));     // "8235080910" - Austrian Social Security number for a specific birth date
+echo $faker->ssn;                                  // "3130231169" - Austrian Social Security number
+echo $faker->ssn(new \DateTime('2010-09-08'));     // "8235080910" - Austrian Social Security number for a specific birth date
 ```
