@@ -20,6 +20,12 @@ echo $faker->monthNameGenitive; // "prosince"
 echo $faker->formattedDate; // "12. listopadu 2015"
 ```
 
+### `Faker\Provider\cs_CZ\Payment`
+
+```php
+echo $faker->bankAccountNumber; // "CZ2318941673853266249134"
+```
+
 ### `Faker\Provider\cs_CZ\Person`
 
 ```php

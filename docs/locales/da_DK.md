@@ -26,3 +26,9 @@ echo $faker->cvr; // "32458723"
 // Generates a random P number
 echo $faker->p; // "5398237590"
 ```
+
+### `Faker\Provider\da_DK\Payment`
+
+```php
+echo $faker->bankAccountNumber; // "DK4482839445577922"
+```
