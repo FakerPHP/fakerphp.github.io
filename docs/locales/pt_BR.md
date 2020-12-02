@@ -31,6 +31,12 @@ echo $faker->phoneNumber;           // formatted, random landline or cellphone (
 echo $faker->phoneNumberCleared;    // not formatted, random landline or cellphone (obeying the 9th digit rule)
 ```
 
+### `Faker\Provider\pt_BR\Payment`
+
+```php
+echo $faker->bankAccountNumber; // "BR0506997786328342762640926MO"
+```
+
 ### `Faker\Provider\pt_BR\Person`
 
 ```php

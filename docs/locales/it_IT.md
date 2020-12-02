@@ -7,6 +7,12 @@
 echo $faker->vatId(); // "IT98746784967"
 ```
 
+### `Faker\Provider\it_IT\Payment`
+
+```php
+echo $faker->bankAccountNumber; // "IT53H9229628427XEQQOX0CU8Z0"
+```
+
 ### `Faker\Provider\it_IT\Person`
 
 ```php
