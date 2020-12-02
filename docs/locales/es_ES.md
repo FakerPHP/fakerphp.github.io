@@ -13,6 +13,8 @@ echo $faker->licenceCode; // B
 ### `Faker\Provider\es_ES\Payment`
 
 ```php
+echo $faker->bankAccountNumber; // "ES5285748762396535068585"
+
 // Generates a Código de identificación Fiscal (CIF) number
 echo $faker->vat;           // "A35864370"
 ```
