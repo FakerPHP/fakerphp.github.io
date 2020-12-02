@@ -1,5 +1,12 @@
 # Italian (Switzerland)
 
+### `Faker\Provider\it_CH\Payment`
+
+```php
+echo $faker->bankAccountNumber; // "CH28167004ZG2ZU4X0H47"
+```
+
+
 ### `Faker\Provider\it_CH\Person`
 
 ```php
