@@ -1,5 +1,11 @@
 # English (New Zealand)
 
+### `Faker\Provider\en_NZ\Address`
+
+```php
+echo $faker->region; // "Auckland"
+```
+
 ### `Faker\Provider\en_NZ\Phone`
 
 ```php

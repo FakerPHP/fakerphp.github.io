@@ -3,8 +3,8 @@
 ### `Faker\Provider\en_GB\Address`
 
 ```php
-echo $faker->secondaryAddress; // 'Flat 13'
-echo $faker->county; // 'Hampshire'
+echo $faker->secondaryAddress;  // "Flat 13"
+echo $faker->county;            // 'Hampshire'
 ```
 
 ### `Faker\Provider\en_GB\Payment`
@@ -13,5 +13,11 @@ echo $faker->county; // 'Hampshire'
 echo $faker->bankAccountNumber; // "GB28MLRJ42074399970100"
 
 // Generates a random National Insurance number.
-echo $faker->nino;  // 'TY179309C'
+echo $faker->nino;  // "TY179309C"
+```
+
+### `Faker\Provider\en_GB\PhoneNumber`
+
+```php
+echo $faker->mobileNumber; // "07720324489"
 ```

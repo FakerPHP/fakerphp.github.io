@@ -31,4 +31,6 @@ echo $faker->premiumPhoneNumber; // "1900 219 6547"
 echo $faker->mobileNumber; // "9207 0603"
 
 echo $faker->fixedLineNumber; // "6752 8659"
+
+echo $faker->voipNumber; // "3384 1228
 ```
