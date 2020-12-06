@@ -7,7 +7,7 @@
 echo $faker->bank; // "ОТП Банк"
 
 // Generate a Russian Tax Payment Number for Company
-echo $faker->inn; //  7813540735
+echo $faker->inn10; //  7813540735
 
 // Generate a Russian Tax Code for Company
 echo $faker->kpp; // 781301001
