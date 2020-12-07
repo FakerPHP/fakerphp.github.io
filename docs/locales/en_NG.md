@@ -3,7 +3,7 @@
 ### `Faker\Provider\en_NG\Address`
 
 ```php
-// Generates a random region name
+echo $faker->county; // 'Edo'
 echo $faker->region; // 'Katsina'
 ```
 
