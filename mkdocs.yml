@@ -31,14 +31,22 @@ extra:
   locales: &locales
     - locales/ar_SA.md
     - locales/bg_BG.md
+    - locales/bn_BD.md
     - locales/cs_CZ.md
     - locales/da_DK.md
     - locales/de_AT.md
     - locales/de_CH.md
     - locales/de_DE.md
+    - locales/el_CY.md
+    - locales/el_GR.md
+    - locales/en_GB.md
     - locales/en_HK.md
+    - locales/en_IN.md
     - locales/en_NG.md
     - locales/en_NZ.md
+    - locales/en_PH.md
+    - locales/en_SG.md
+    - locales/en_UG.md
     - locales/en_US.md
     - locales/en_ZA.md
     - locales/es_ES.md
@@ -53,6 +61,7 @@ extra:
     - locales/hr_HR.md
     - locales/hu_HU.md
     - locales/id_ID.md
+    - locales/is_IS.md
     - locales/it_CH.md
     - locales/it_IT.md
     - locales/ja_JP.md
@@ -61,6 +70,7 @@ extra:
     - locales/ko_KR.md
     - locales/lt_LT.md
     - locales/lv_LV.md
+    - locales/me_ME.md
     - locales/ms_MY.md
     - locales/nb_NO.md
     - locales/ne_NP.md
@@ -72,6 +82,11 @@ extra:
     - locales/ro_MD.md
     - locales/ro_RO.md
     - locales/ru_RU.md
+    - locales/sk_SK.md
+    - locales/sl_SI.md
+    - locales/sr_Cyrl_RS.md
+    - locales/sr_Latn_RS.md
+    - locales/sr_RS.md
     - locales/sv_SE.md
     - locales/tr_TR.md
     - locales/uk_UA.md
