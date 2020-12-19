@@ -66,4 +66,5 @@ jobTitle                // 'Cashier'
 
 ```php
 realText($maxNbChars = 200, $indexSize = 2) // "And yet I wish you could manage it?) 'And what are they made of?' Alice asked in a shrill, passionate voice. 'Would YOU like cats if you were never even spoke to Time!' 'Perhaps not,' Alice replied."
+realTextBetween($minNbChars = 160, $maxNbChars = 200, $indexSize = 2) // "VERY short remarks, and she ran across the garden, and I had not long to doubt, for the end of the bottle was NOT marked 'poison,' it is right?' 'In my youth,' Father William replied to his ear."
 ```
