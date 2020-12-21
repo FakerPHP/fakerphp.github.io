@@ -4,6 +4,7 @@
 
 ```php
 // Generates a valid nationalCode
+//ساختن یک کد ملی معتبر
 echo $faker->nationalCode; // "0078475759"
 ```
 
