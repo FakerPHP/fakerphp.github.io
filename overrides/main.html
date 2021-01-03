@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#2094f3">
+<meta name="msapplication-TileColor" content="#2094f3">
+<meta name="theme-color" content="#2094f3">
+
+{% set title = config.site_name %}
+{% if page and page.meta and page.meta.title %}
+    {% set title = title ~ " - " ~ page.meta.title %}
+{% elif page and page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ page.title | striptags %}
+{% endif %}
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:type" content="website" />
+<meta property="og:description" content="{{ config.site_description }}">
+<meta property="og:url" content="{{ page.canonical_url }}">
+<meta property="og:image" content="https://github.com/FakerPHP/Artwork/raw/main/src/socialcard.png">
+<meta name="twitter:title" content="{{ title }}"/>
+<meta name="twitter:description" content="{{ config.site_description }}"/>
+<meta name="twitter:image" content="https://github.com/FakerPHP/Artwork/raw/main/src/socialcard.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+{% endblock %}
