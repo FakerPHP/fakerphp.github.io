@@ -1,0 +1,23 @@
+{
+  "short_name": "FakerPHP",
+  "name": "FakerPHP / Faker",
+  "description": "Documentation for FakerPHP / Faker",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#2e303e",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#2094f3",
+  "shortcuts": []
+}

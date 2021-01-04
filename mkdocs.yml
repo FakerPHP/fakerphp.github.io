@@ -7,6 +7,7 @@ edit_uri: https://github.com/FakerPHP/fakerphp.github.io/edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: 'Nunito'
     code: 'Fira Code'
@@ -14,6 +15,8 @@ theme:
     scheme: preference
     primary: blue
     accent: blue
+  favicon: images/favicon.ico
+  logo: images/logo.svg
   icon:
     repo: fontawesome/brands/github
   language: en
@@ -21,6 +24,7 @@ theme:
     - navigation.instant
 
 extra:
+  manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/FakerPHP/Faker
@@ -119,6 +123,7 @@ nav:
 
 markdown_extensions:
   - admonition: { }
+  - meta: { }
   - toc:
       permalink: '#'
   - pymdownx.details: { }
