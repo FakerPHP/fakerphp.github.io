@@ -10,20 +10,20 @@ echo $faker->dni; // '83367512'
 ### `Faker\Provider\es_PE\Company`
 
 ```php
-// Generates a Peruvian Documento Nacional de Identidad (DNI) number
+// Generates a Peruvian REG. UNICO DE CONTRIBUYENTES (RUC) number
 echo $faker->ruc; // '20105895410'
 ```
 
 ### `Faker\Provider\es_PE\Company`
 
 ```php
-// Generates a Peruvian Documento Nacional de Identidad (DNI) number
+// Generates a Peruvian REG. UNICO DE CONTRIBUYENTES (RUC) number
 echo $faker->ruc(true); // '20105895410'
 ```
 
 ### `Faker\Provider\es_PE\Company`
 
 ```php
-// Generates a Peruvian Documento Nacional de Identidad (DNI) number
+// Generates a REG. UNICO DE CONTRIBUYENTES (RUC) number
 echo $faker->ruc(false); // '20105895410'
 ```
