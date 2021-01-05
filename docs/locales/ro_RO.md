@@ -4,23 +4,23 @@
 
 ```php
 // Generates a random bank account number
-echo $faker->bankAccountNumber; // "RO55WRJE3OE8X3YQI7J26U1E"
+echo $faker->bankAccountNumber(); // "RO55WRJE3OE8X3YQI7J26U1E"
 ```
 
 ### `Faker\Provider\ro_RO\Person`
 
 ```php
 // Generates a random male name prefix/title
-echo $faker->prefixMale; // "ing."
+echo $faker->prefixMale(); // "ing."
 // Generates a random female name prefix/title
-echo $faker->prefixFemale; // "d-na."
+echo $faker->prefixFemale(); // "d-na."
 // Generates a random male first name
-echo $faker->firstNameMale; // "Adrian"
+echo $faker->firstNameMale(); // "Adrian"
 // Generates a random female first name
-echo $faker->firstNameFemale; // "Miruna"
+echo $faker->firstNameFemale(); // "Miruna"
 
 // Generates a random Personal Numerical Code (CNP)
-echo $faker->cnp; // "2800523081231"
+echo $faker->cnp(); // "2800523081231"
 // Valid option values:
 //    $gender: null (random), male, female
 //    $dateOfBirth (1800+): null (random), Y-m-d, Y-m (random day), Y (random month and day)
@@ -34,7 +34,7 @@ echo $faker->cnp($gender = null, $dateOfBirth = null, $county = null, $isResiden
 
 ```php
 // Generates a random toll-free phone number
-echo $faker->tollFreePhoneNumber; // "0800123456"
+echo $faker->tollFreePhoneNumber(); // "0800123456"
 // Generates a random premium-rate phone number
-echo $faker->premiumRatePhoneNumber; // "0900123456"
+echo $faker->premiumRatePhoneNumber(); // "0900123456"
 ```

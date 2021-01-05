@@ -3,5 +3,5 @@
 ### `Faker\Provider\bn_BD\Company`
 
 ```php
-echo $faker->companyType; // "সার"
+echo $faker->companyType(); // "সার"
 ```

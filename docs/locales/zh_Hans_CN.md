@@ -4,5 +4,5 @@
 
 ```php
 // Generates a random bank name (based on list of real chinese banks)
-echo $faker->bank; // '中国建设银行'
+echo $faker->bank(); // '中国建设银行'
 ```
