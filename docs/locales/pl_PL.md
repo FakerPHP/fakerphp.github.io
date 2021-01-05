@@ -4,36 +4,36 @@
 
 ```php
 // Generates a random PESEL number
-echo $faker->pesel; // "40061451555"
+echo $faker->pesel(); // "40061451555"
 // Generates a random personal identity card number
-echo $faker->personalIdentityNumber; // "AKX383360"
+echo $faker->personalIdentityNumber(); // "AKX383360"
 // Generates a random taxpayer identification number (NIP)
-echo $faker->taxpayerIdentificationNumber; // '8211575109'
+echo $faker->taxpayerIdentificationNumber(); // '8211575109'
 ```
 
 ### `Faker\Provider\pl_PL\Company`
 
 ```php
 // Generates a random REGON number
-echo $faker->regon; // "714676680"
+echo $faker->regon(); // "714676680"
 // Generates a random local REGON number
-echo $faker->regonLocal; // "15346111382836"
+echo $faker->regonLocal(); // "15346111382836"
 ```
 
 ### `Faker\Provider\pl_PL\Payment`
 
 ```php
 // Generates a random bank name
-echo $faker->bank; // "Narodowy Bank Polski"
+echo $faker->bank(); // "Narodowy Bank Polski"
 // Generates a random bank account number
-echo $faker->bankAccountNumber; // "PL14968907563953822118075816"
+echo $faker->bankAccountNumber(); // "PL14968907563953822118075816"
 ```
 
 ### `Faker\Provider\pl_PL\LicensePlate`
 ```php
 <?php
 // Generates a random Polish civil vehicle registration number
-echo $faker->licensePlate; // "SO 4429E"
+echo $faker->licensePlate(); // "SO 4429E"
 echo $faker->licensePlate(false); // "BKL YP21"
 // Generates a random Polish vehicle registration number including civil, army and services plates
 echo $faker->licensePlate(true); // "CBY 0874H", "HPF N2LV"

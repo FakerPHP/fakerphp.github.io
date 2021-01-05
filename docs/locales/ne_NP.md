@@ -4,8 +4,8 @@
 
 ```php
 // Generates a Nepali district name
-echo $faker->district;
+echo $faker->district();
 
 // Generates a Nepali city name
-echo $faker->cityName;
+echo $faker->cityName();
 ```

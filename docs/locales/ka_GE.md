@@ -4,5 +4,5 @@
 
 ```php
 // Generates a random bank account number
-echo $faker->bankAccountNumber; // "GE33ZV9773853617253389"
+echo $faker->bankAccountNumber(); // "GE33ZV9773853617253389"
 ```
