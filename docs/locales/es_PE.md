@@ -18,7 +18,7 @@ echo $faker->ruc; // '20105895410'
 
 ```php
 // Generates a Peruvian REG. UNICO DE CONTRIBUYENTES (RUC) number
-echo $faker->ruc(true); // '20105895410'
+echo $faker->ruc(true); // '10105895410'
 ```
 
 ### `Faker\Provider\es_PE\Company`
