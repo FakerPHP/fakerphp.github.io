@@ -23,5 +23,5 @@ echo $faker->mobileNumber(); // "92150087"
 echo $faker->landlineNumber(); // "32750132"
 
 // Generates a Hong Kong fax number (starting with 7)
-echo $faker->faxNumber; // "71937729"
+echo $faker->faxNumber(); // "71937729"
 ```

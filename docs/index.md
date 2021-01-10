@@ -44,9 +44,6 @@ require_once 'vendor/autoload.php';
 
 // use the factory to create a Faker\Generator instance
 $faker = Faker\Factory::create();
-// generate data by accessing properties
-echo $faker->name();
-// 'Vince Sporer'
 echo $faker->email();
 // 'walter.sophia@hotmail.com'
 echo $faker->text();
@@ -74,7 +71,7 @@ Faker provides three special providers, `unique()`, `optional()`, and `valid()`,
 $values = [];
 for ($i = 0; $i < 10; $i++) {
     // get a random digit, but always a new one, to avoid duplicates
-    $values []= $faker->unique()->randomDigit;
+    $values []= $faker->unique()->randomDigit();
 }
 print_r($values); // [4, 1, 8, 5, 0, 2, 6, 9, 7, 3]
 
@@ -82,33 +79,33 @@ print_r($values); // [4, 1, 8, 5, 0, 2, 6, 9, 7, 3]
 $values = [];
 try {
     for ($i = 0; $i < 10; $i++) {
-        $values []= $faker->unique()->randomDigitNotNull;
+        $values []= $faker->unique()->randomDigitNotNull();
     }
 } catch (\OverflowException $e) {
     echo "There are only 9 unique digits not null, Faker can't generate 10 of them!";
 }
 
 // you can reset the unique modifier for all providers by passing true as first argument
-$faker->unique($reset = true)->randomDigitNotNull; // will not throw OverflowException since unique() was reset
+$faker->unique($reset = true)->randomDigitNotNull(); // will not throw OverflowException since unique() was reset
 // tip: unique() keeps one array of values per provider
 
 // optional() sometimes bypasses the provider to return a default value instead (which defaults to NULL)
 $values = [];
 for ($i = 0; $i < 10; $i++) {
     // get a random digit, but also null sometimes
-    $values []= $faker->optional()->randomDigit;
+    $values []= $faker->optional()->randomDigit();
 }
 print_r($values); // [1, 4, null, 9, 5, null, null, 4, 6, null]
 
 // optional() accepts a weight argument to specify the probability of receiving the default value.
 // 0 will always return the default value; 1 will always return the provider. Default weight is 0.5 (50% chance).
-$faker->optional($weight = 0.1)->randomDigit; // 90% chance of NULL
-$faker->optional($weight = 0.9)->randomDigit; // 10% chance of NULL
+$faker->optional($weight = 0.1)->randomDigit(); // 90% chance of NULL
+$faker->optional($weight = 0.9)->randomDigit(); // 10% chance of NULL
 
 // optional() accepts a default argument to specify the default value to return.
 // Defaults to NULL.
-$faker->optional($weight = 0.5, $default = false)->randomDigit; // 50% chance of FALSE
-$faker->optional($weight = 0.9, $default = 'abc')->word; // 10% chance of 'abc'
+$faker->optional($weight = 0.5, $default = false)->randomDigit(); // 50% chance of FALSE
+$faker->optional($weight = 0.9, $default = 'abc')->word(); // 10% chance of 'abc'
 
 // valid() only accepts valid values according to the passed validator functions
 $values = [];
@@ -116,7 +113,7 @@ $evenValidator = function($digit) {
 	return $digit % 2 === 0;
 };
 for ($i = 0; $i < 10; $i++) {
-	$values []= $faker->valid($evenValidator)->randomDigit;
+	$values []= $faker->valid($evenValidator)->randomDigit();
 }
 print_r($values); // [0, 4, 8, 4, 2, 6, 0, 8, 8, 6]
 
@@ -145,7 +142,7 @@ factory falls back to the default locale (en_US).
 // create a French faker
 $faker = Faker\Factory::create('fr_FR');
 for ($i = 0; $i < 3; $i++) {
-    echo $faker->name, "\n";
+    echo $faker->name(), "\n";
 }
 
 // Luce du Coulon
@@ -229,7 +226,7 @@ You may want to always get the same generated data - for instance when using Fak
 $faker = Faker\Factory::create();
 $faker->seed(1234);
 
-echo $faker->name; // 'Jess Mraz I';
+echo $faker->name(); // 'Jess Mraz I';
 ```
 
 ???+ tip
@@ -302,9 +299,9 @@ Now you can use the two new formatters like any other Faker formatter:
 
 ```php
 $book = new Book();
-$book->setTitle($faker->title);
-$book->setISBN($faker->ISBN);
-$book->setSummary($faker->text);
+$book->setTitle($faker->title());
+$book->setISBN($faker->ISBN());
+$book->setSummary($faker->text());
 $book->setPrice($faker->randomNumber(2));
 ```
 
