@@ -145,7 +145,7 @@ factory falls back to the default locale (en_US).
 // create a French faker
 $faker = Faker\Factory::create('fr_FR');
 for ($i = 0; $i < 3; $i++) {
-    echo $faker->name(), "\n";
+    echo $faker->name() . "\n";
 }
 
 // Luce du Coulon
