@@ -37,13 +37,14 @@ require_once '/path/to/Faker/src/autoload.php';
 
 ### Create fake data
 
-Use `Faker\Factory::create()` to create and initialize a faker generator, which can generate data by accessing properties named after the type of data you want.
+Use `Faker\Factory::create()` to create and initialize a faker generator, which can generate data by calling methods named after the type of data you want.
 
 ```php
 require_once 'vendor/autoload.php';
 
 // use the factory to create a Faker\Generator instance
 $faker = Faker\Factory::create();
+// generate data by calling methods
 echo $faker->name();
 // 'Vince Sporer'
 echo $faker->email();
