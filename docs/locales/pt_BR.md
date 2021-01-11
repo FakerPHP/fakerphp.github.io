@@ -54,6 +54,6 @@ echo $faker->rg(false);  // '844057363'
 
 ```php
 // Generates a Brazilian formatted and valid CNPJ
-echo $faker->cnpj;        // '23.663.478/0001-24'
+echo $faker->cnpj();      // '23.663.478/0001-24'
 echo $faker->cnpj(false); // '23663478000124'
 ```

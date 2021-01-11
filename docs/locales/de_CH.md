@@ -25,5 +25,5 @@ echo $faker->ahv13(); // "756.1234.5678.97"
 ### `Faker\Provider\de_CH\PhoneNumber`
 
 ```php
-echo $faker->mobileNumber; // "076 915 37 73"
+echo $faker->mobileNumber(); // "076 915 37 73"
 ```
