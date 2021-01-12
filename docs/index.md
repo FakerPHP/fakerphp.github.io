@@ -101,9 +101,16 @@ for ($i = 0; $i < 10; $i++) {
 print_r($values); // [1, 4, null, 9, 5, null, null, 4, 6, null]
 
 // optional() accepts a weight argument to specify the probability of receiving the default value.
-// 0 will always return the default value; 1 will always return the provider. Default weight is 0.5 (50% chance).
+// 0 will always return the default value; 1.0 will always return the provider. Default weight is 0.5 (50% chance).
+// Please note that the weight can be provided as float (0 / 1.0) or int (0 / 100)
+
+// As float
 $faker->optional($weight = 0.1)->randomDigit(); // 90% chance of NULL
 $faker->optional($weight = 0.9)->randomDigit(); // 10% chance of NULL
+
+// As int
+$faker->optional($weight = 10)->randomDigit; // 90% chance of NULL
+$faker->optional($weight = 100)->randomDigit; // 0% chance of NULL
 
 // optional() accepts a default argument to specify the default value to return.
 // Defaults to NULL.
