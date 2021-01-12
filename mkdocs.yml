@@ -119,6 +119,7 @@ nav:
       - formatters/biased.md
       - formatters/html-lorem.md
   - 'Locales': *locales
+  - orm.md
   - third-party.md
 
 markdown_extensions:
