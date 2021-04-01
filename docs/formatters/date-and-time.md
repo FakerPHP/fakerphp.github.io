@@ -290,7 +290,7 @@ echo $faker->century();
 Generate a random timezone name.
 
 ```php
-echo $faker->century();
+echo $faker->timezone();
 
 // 'Europe/Amsterdam', 'America/Montreal'
 ```
