@@ -182,7 +182,7 @@ echo $faker->dateTimeThisMonth();
 
 echo $faker->dateTimeThisMonth('+12 days');
 
-// a date somewhere in this year, with an upper bound of +12 days
+// a date somewhere in this month, with an upper bound of +12 days
 ```
 
 ## `amPm`
