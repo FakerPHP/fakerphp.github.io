@@ -118,6 +118,7 @@ nav:
       - formatters/miscellaneous.md
       - formatters/biased.md
       - formatters/html-lorem.md
+      - formatters/version.md
   - 'Locales': *locales
   - orm.md
   - third-party.md
