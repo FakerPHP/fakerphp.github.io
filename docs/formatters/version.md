@@ -4,8 +4,8 @@
 
 Generate a random [semantic version v2.0.0](https://semver.org/spec/v2.0.0.html) string.
 
-Optionally, the parameters `$preRelease` and `$build` can be set to `true`, to randomly include pre-release and/or build
-parts within the version.
+Optionally, the parameters `$preRelease` and `$build` can be set to `true` to randomly include pre-release and/or build
+parts into the version.
 
 Examples:
 
