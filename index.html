@@ -1,0 +1,1814 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for FakerPHP / Faker">
+      
+      
+      
+      
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>FakerPHP / Faker</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700%7CFira+Code&display=fallback">
+        <style>:root{--md-text-font-family:"Nunito";--md-code-font-family:"Fira Code"}</style>
+      
+    
+    
+      <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css">
+    
+    
+      
+
+
+    
+    
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#2094f3">
+<meta name="msapplication-TileColor" content="#2094f3">
+<meta name="theme-color" content="#2094f3">
+
+
+
+
+<meta property="og:title" content="FakerPHP / Faker">
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Documentation for FakerPHP / Faker">
+<meta property="og:url" content="None">
+<meta property="og:image" content="https://github.com/FakerPHP/Artwork/raw/main/src/socialcard.png">
+<meta name="twitter:title" content="FakerPHP / Faker"/>
+<meta name="twitter:description" content="Documentation for FakerPHP / Faker"/>
+<meta name="twitter:image" content="https://github.com/FakerPHP/Artwork/raw/main/src/socialcard.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faker" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="FakerPHP / Faker" class="md-header__button md-logo" aria-label="FakerPHP / Faker" data-md-component="logo">
+      
+  <img src="images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FakerPHP / Faker
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Faker
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/FakerPHP/Faker/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FakerPHP/Faker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="FakerPHP / Faker" class="md-nav__button md-logo" aria-label="FakerPHP / Faker" data-md-component="logo">
+      
+  <img src="images/logo.svg" alt="logo">
+
+    </a>
+    FakerPHP / Faker
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/FakerPHP/Faker/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FakerPHP/Faker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Faker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        Faker
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    Basic Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autoloading" class="md-nav__link">
+    Autoloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-fake-data" class="md-nav__link">
+    Create fake data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    Modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    Localization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seeding-the-generator" class="md-nav__link">
+    Seeding the Generator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faker-internals-understanding-providers" class="md-nav__link">
+    Faker Internals: Understanding Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-specific-formatters" class="md-nav__link">
+    Language specific formatters
+  </a>
+  
+    <nav class="md-nav" aria-label="Language specific formatters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#misnamed-locales" class="md-nav__link">
+    Misnamed locales
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters.html" class="md-nav__link">
+        Available Formatters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Formatters
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Formatters" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Formatters
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/numbers-and-strings.html" class="md-nav__link">
+        Numbers and Strings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/text-and-paragraphs.html" class="md-nav__link">
+        Text and Paragraphs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/date-and-time.html" class="md-nav__link">
+        Date and Time
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/internet.html" class="md-nav__link">
+        Internet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/user-agent.html" class="md-nav__link">
+        User Agent
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/payment.html" class="md-nav__link">
+        Payment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/color.html" class="md-nav__link">
+        Color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/file.html" class="md-nav__link">
+        File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/image.html" class="md-nav__link">
+        Image
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/uuid.html" class="md-nav__link">
+        UUID
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/barcode.html" class="md-nav__link">
+        Barcode
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/miscellaneous.html" class="md-nav__link">
+        Miscellaneous
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/biased.html" class="md-nav__link">
+        Biased
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/html-lorem.html" class="md-nav__link">
+        HTML Lorem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="formatters/version.html" class="md-nav__link">
+        Version
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Locales
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Locales" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Locales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ar_SA.html" class="md-nav__link">
+        Arabic (Saudi Arabia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/bg_BG.html" class="md-nav__link">
+        Bulgarian (Bulgaria)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/bn_BD.html" class="md-nav__link">
+        Bangla (Bangladesh)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/cs_CZ.html" class="md-nav__link">
+        Czech (Czech Republic)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/da_DK.html" class="md-nav__link">
+        Danish (Denmark)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/de_AT.html" class="md-nav__link">
+        German (Austria)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/de_CH.html" class="md-nav__link">
+        German (Switzerland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/de_DE.html" class="md-nav__link">
+        German (Germany)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/el_CY.html" class="md-nav__link">
+        Greek (Cyprus)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/el_GR.html" class="md-nav__link">
+        Greek (Greece)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_GB.html" class="md-nav__link">
+        English (United Kingdom)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_HK.html" class="md-nav__link">
+        English (Hong Kong SAR China)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_IN.html" class="md-nav__link">
+        English (India)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_NG.html" class="md-nav__link">
+        English (Nigeria)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_NZ.html" class="md-nav__link">
+        English (New Zealand)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_PH.html" class="md-nav__link">
+        English (Philippines)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_SG.html" class="md-nav__link">
+        English (Singapore)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_UG.html" class="md-nav__link">
+        English (Uganda)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_US.html" class="md-nav__link">
+        English (United States)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/en_ZA.html" class="md-nav__link">
+        English (South Africa)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/es_ES.html" class="md-nav__link">
+        Spanish (Spain)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/es_PE.html" class="md-nav__link">
+        Spanish (Peru)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/es_VE.html" class="md-nav__link">
+        Spanish (Venezuela)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/fa_IR.html" class="md-nav__link">
+        Persian (Iran)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/fi_FI.html" class="md-nav__link">
+        Finnish (Finland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/fr_BE.html" class="md-nav__link">
+        French (Belgium)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/fr_CH.html" class="md-nav__link">
+        French (Switzerland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/fr_FR.html" class="md-nav__link">
+        French (France)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/he_IL.html" class="md-nav__link">
+        Hebrew (Israel)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/hr_HR.html" class="md-nav__link">
+        Croatian (Croatia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/hu_HU.html" class="md-nav__link">
+        Hungarian (Hungary)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/id_ID.html" class="md-nav__link">
+        Indonesian (Indonesia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/is_IS.html" class="md-nav__link">
+        Icelandic (Iceland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/it_CH.html" class="md-nav__link">
+        Italian (Switzerland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/it_IT.html" class="md-nav__link">
+        Italian (Italy)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ja_JP.html" class="md-nav__link">
+        Japanese (Japan)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ka_GE.html" class="md-nav__link">
+        Georgian (Georgia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/kk_KZ.html" class="md-nav__link">
+        Kazakh (Kazakhstan)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ko_KR.html" class="md-nav__link">
+        Korean (South Korea)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/lt_LT.html" class="md-nav__link">
+        Lithuanian (Lithuania)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/lv_LV.html" class="md-nav__link">
+        Latvian (Latvia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/me_ME.html" class="md-nav__link">
+        Montenegrin (Montenegro)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ms_MY.html" class="md-nav__link">
+        Malay (Malaysia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/nb_NO.html" class="md-nav__link">
+        Norwegian Bokmål (Norway)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ne_NP.html" class="md-nav__link">
+        Nepali (Nepal)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/nl_BE.html" class="md-nav__link">
+        Dutch (Belgium)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/nl_NL.html" class="md-nav__link">
+        Dutch (Netherlands)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/pl_PL.html" class="md-nav__link">
+        Polish (Poland)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/pt_BR.html" class="md-nav__link">
+        Portuguese (Brazil)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/pt_PT.html" class="md-nav__link">
+        Portuguese (Portugal)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ro_MD.html" class="md-nav__link">
+        Romanian (Moldova)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ro_RO.html" class="md-nav__link">
+        Romanian (Romania)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/ru_RU.html" class="md-nav__link">
+        Russian (Russia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sk_SK.html" class="md-nav__link">
+        Slovak (Slovakia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sl_SI.html" class="md-nav__link">
+        Slovenian (Slovenia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sr_Cyrl_RS.html" class="md-nav__link">
+        Serbian (Cyrillic, Serbia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sr_Latn_RS.html" class="md-nav__link">
+        Serbian (Latin, Serbia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sr_RS.html" class="md-nav__link">
+        Serbian (Serbia)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/sv_SE.html" class="md-nav__link">
+        Swedish (Sweden)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/tr_TR.html" class="md-nav__link">
+        Turkish (Turkey)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/uk_UA.html" class="md-nav__link">
+        Ukrainian (Ukraine)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/zh_Hans_CN.html" class="md-nav__link">
+        Chinese (Simplified, China)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="locales/zh_Hant_TW.html" class="md-nav__link">
+        Chinese (Traditional, Taiwan)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="orm.html" class="md-nav__link">
+        ORM Integration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="third-party.html" class="md-nav__link">
+        Third-Party Libraries
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    Basic Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autoloading" class="md-nav__link">
+    Autoloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-fake-data" class="md-nav__link">
+    Create fake data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    Modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    Localization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seeding-the-generator" class="md-nav__link">
+    Seeding the Generator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faker-internals-understanding-providers" class="md-nav__link">
+    Faker Internals: Understanding Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-specific-formatters" class="md-nav__link">
+    Language specific formatters
+  </a>
+  
+    <nav class="md-nav" aria-label="Language specific formatters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#misnamed-locales" class="md-nav__link">
+    Misnamed locales
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/FakerPHP/fakerphp.github.io/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="faker">Faker<a class="headerlink" href="#faker" title="Permanent link">#</a></h1>
+<p><a href="https://packagist.org/packages/fakerphp/faker"><img alt="Packagist Downloads" src="https://img.shields.io/packagist/dm/FakerPHP/Faker" /></a>
+<a href="https://github.com/FakerPHP/Faker/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/FakerPHP/Faker/Continuous%20Integration/main" /></a></p>
+<p>Faker is a PHP library that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.</p>
+<p>It's heavily inspired by Perl's <a href="https://metacpan.org/pod/Data::Faker">Data::Faker</a>, and by Ruby's <a href="https://rubygems.org/gems/faker">Faker</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p>Faker requires PHP &gt;= 7.1.</p>
+<pre class="highlight"><code class="language-shell">composer require fakerphp/faker</code></pre>
+<h2 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">#</a></h2>
+<h3 id="autoloading">Autoloading<a class="headerlink" href="#autoloading" title="Permanent link">#</a></h3>
+<p>Faker supports both <code>PSR-0</code> as <code>PSR-4</code> autoloaders.</p>
+<pre class="highlight"><code class="language-php">// when installed via composer
+require_once 'vendor/autoload.php';</code></pre>
+<p>You can also load <code>Fakers</code> shipped <code>PSR-0</code> autoloader</p>
+<pre class="highlight"><code class="language-php">// load Faker autoloader
+require_once '/path/to/Faker/src/autoload.php';</code></pre>
+<p><em>alternatively, you can use any other PSR-4 compliant autoloader</em></p>
+<h3 id="create-fake-data">Create fake data<a class="headerlink" href="#create-fake-data" title="Permanent link">#</a></h3>
+<p>Use <code>Faker\Factory::create()</code> to create and initialize a faker generator, which can generate data by calling methods named after the type of data you want.</p>
+<pre class="highlight"><code class="language-php">require_once 'vendor/autoload.php';
+
+// use the factory to create a Faker\Generator instance
+$faker = Faker\Factory::create();
+// generate data by calling methods
+echo $faker-&gt;name();
+// 'Vince Sporer'
+echo $faker-&gt;email();
+// 'walter.sophia@hotmail.com'
+echo $faker-&gt;text();
+// 'Numquam ut mollitia at consequuntur inventore dolorem.'</code></pre>
+<p>Each call to <code>$faker-&gt;name()</code> yields a different (random) result. This is because Faker uses <code>__call()</code> magic, and forwards <code>Faker\Generator-&gt;$method()</code> calls to <code>Faker\Generator-&gt;format($method, $attributes)</code>.</p>
+<pre class="highlight"><code class="language-php">for ($i = 0; $i &lt; 3; $i++) {
+    echo $faker-&gt;name() . "\n";
+}
+
+// 'Cyrus Boyle'
+// 'Alena Cummerata'
+// 'Orlo Bergstrom'</code></pre>
+<h2 id="modifiers">Modifiers<a class="headerlink" href="#modifiers" title="Permanent link">#</a></h2>
+<p>Faker provides three special providers, <code>unique()</code>, <code>optional()</code>, and <code>valid()</code>, to be called before any provider.</p>
+<pre class="highlight"><code class="language-php">// unique() forces providers to return unique values
+$values = [];
+for ($i = 0; $i &lt; 10; $i++) {
+    // get a random digit, but always a new one, to avoid duplicates
+    $values []= $faker-&gt;unique()-&gt;randomDigit();
+}
+print_r($values); // [4, 1, 8, 5, 0, 2, 6, 9, 7, 3]
+
+// providers with a limited range will throw an exception when no new unique value can be generated
+$values = [];
+try {
+    for ($i = 0; $i &lt; 10; $i++) {
+        $values []= $faker-&gt;unique()-&gt;randomDigitNotNull();
+    }
+} catch (\OverflowException $e) {
+    echo "There are only 9 unique digits not null, Faker can't generate 10 of them!";
+}
+
+// you can reset the unique modifier for all providers by passing true as first argument
+$faker-&gt;unique($reset = true)-&gt;randomDigitNotNull(); // will not throw OverflowException since unique() was reset
+// tip: unique() keeps one array of values per provider
+
+// optional() sometimes bypasses the provider to return a default value instead (which defaults to NULL)
+$values = [];
+for ($i = 0; $i &lt; 10; $i++) {
+    // get a random digit, but also null sometimes
+    $values []= $faker-&gt;optional()-&gt;randomDigit();
+}
+print_r($values); // [1, 4, null, 9, 5, null, null, 4, 6, null]
+
+// optional() accepts a weight argument to specify the probability of receiving the default value.
+// 0 will always return the default value; 1.0 will always return the provider. Default weight is 0.5 (50% chance).
+// Please note that the weight can be provided as float (0 / 1.0) or int (0 / 100)
+
+// As float
+$faker-&gt;optional($weight = 0.1)-&gt;randomDigit(); // 90% chance of NULL
+$faker-&gt;optional($weight = 0.9)-&gt;randomDigit(); // 10% chance of NULL
+
+// As int
+$faker-&gt;optional($weight = 10)-&gt;randomDigit; // 90% chance of NULL
+$faker-&gt;optional($weight = 100)-&gt;randomDigit; // 0% chance of NULL
+
+// optional() accepts a default argument to specify the default value to return.
+// Defaults to NULL.
+$faker-&gt;optional($weight = 0.5, $default = false)-&gt;randomDigit(); // 50% chance of FALSE
+$faker-&gt;optional($weight = 0.9, $default = 'abc')-&gt;word(); // 10% chance of 'abc'
+
+// valid() only accepts valid values according to the passed validator functions
+$values = [];
+$evenValidator = function($digit) {
+    return $digit % 2 === 0;
+};
+for ($i = 0; $i &lt; 10; $i++) {
+    $values []= $faker-&gt;valid($evenValidator)-&gt;randomDigit();
+}
+print_r($values); // [0, 4, 8, 4, 2, 6, 0, 8, 8, 6]
+
+// just like unique(), valid() throws an overflow exception when it can't generate a valid value
+$values = [];
+try {
+    $faker-&gt;valid($evenValidator)-&gt;randomElement([1, 3, 5, 7, 9]);
+} catch (\OverflowException $e) {
+    echo "Can't pick an even number in that set!";
+}</code></pre>
+<p>If you would like to use a modifier with a value not generated by Faker, use the <code>passthrough()</code> method. <code>passthrough()</code>
+simply returns whatever value it was given.</p>
+<pre class="highlight"><code class="language-php">$faker-&gt;optional()-&gt;passthrough(mt_rand(5, 15));</code></pre>
+<h2 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">#</a></h2>
+<p><code>Faker\Factory</code> can take a locale as an argument, to return localized data. If no localized provider is found, the
+factory falls back to the default locale (en_US).</p>
+<pre class="highlight"><code class="language-php">// create a French faker
+$faker = Faker\Factory::create('fr_FR');
+for ($i = 0; $i &lt; 3; $i++) {
+    echo $faker-&gt;name() . "\n";
+}
+
+// Luce du Coulon
+// Auguste Dupont
+// Roger Le Voisin</code></pre>
+<p>You can check available Faker locales in the source code, <a href="https://github.com/FakerPHP/Faker/tree/main/src/Faker/Provider">under the <code>Provider</code> directory</a>. The localization of Faker is an ongoing process, for which we need your help. Don't hesitate to create localized providers to your own locale and submit a PR!</p>
+<h2 id="seeding-the-generator">Seeding the Generator<a class="headerlink" href="#seeding-the-generator" title="Permanent link">#</a></h2>
+<p>You may want to always get the same generated data - for instance when using Faker for unit testing purposes. The generator offers a <code>seed()</code> method, which seeds the random number generator. Calling the same script twice with the same seed produces the same results.</p>
+<pre class="highlight"><code class="language-php">$faker = Faker\Factory::create();
+$faker-&gt;seed(1234);
+
+echo $faker-&gt;name(); // 'Jess Mraz I';</code></pre>
+<details class="tip" open="open"><summary>Tip</summary><p>DateTime formatters won't reproduce the same fake data if you don't fix the <code>$max</code> value:</p>
+<pre class="highlight"><code class="language-php">// even when seeded, this line will return different results because $max varies
+$faker-&gt;dateTime(); // equivalent to $faker-&gt;dateTime($max = 'now')
+// make sure you fix the $max parameter
+$faker-&gt;dateTime('2014-02-25 08:37:17'); // will return always the same date when seeded</code></pre>
+</details>
+<details class="tip" open="open"><summary>Tip</summary><p>Formatters won't reproduce the same fake data if you use the <code>rand()</code> php function. Use <code>$faker</code> or <code>mt_rand()</code> instead:</p>
+<pre class="highlight"><code class="language-php">// bad
+$faker-&gt;realText(rand(10, 20));
+// good
+$faker-&gt;realText($faker-&gt;numberBetween(10, 20));</code></pre>
+</details>
+<h2 id="faker-internals-understanding-providers">Faker Internals: Understanding Providers<a class="headerlink" href="#faker-internals-understanding-providers" title="Permanent link">#</a></h2>
+<p>A <code>Faker\Generator</code> alone can't do much generation. It needs <code>Faker\Provider</code> objects to delegate the data generation to them. <code>Faker\Factory::create()</code> actually creates a <code>Faker\Generator</code> bundled with the default providers. Here is what happens under the hood:</p>
+<pre class="highlight"><code class="language-php">$faker = new Faker\Generator();
+$faker-&gt;addProvider(new Faker\Provider\en_US\Person($faker));
+$faker-&gt;addProvider(new Faker\Provider\en_US\Address($faker));
+$faker-&gt;addProvider(new Faker\Provider\en_US\PhoneNumber($faker));
+$faker-&gt;addProvider(new Faker\Provider\en_US\Company($faker));
+$faker-&gt;addProvider(new Faker\Provider\Lorem($faker));
+$faker-&gt;addProvider(new Faker\Provider\Internet($faker));</code></pre>
+<p>Whenever you try to access a property on the <code>$faker</code> object, the generator looks for a method with the same name in all the providers attached to it. For instance, calling <code>$faker-&gt;name</code> triggers a call to <code>Faker\Provider\Person::name()</code>. And since Faker starts with the last provider, you can easily override existing formatters: just add a provider containing methods named after the formatters you want to override.</p>
+<p>That means that you can easily add your own providers to a <code>Faker\Generator</code> instance. A provider is usually a class extending <code>\Faker\Provider\Base</code>. This parent class allows you to use methods like <code>lexify()</code> or <code>randomNumber()</code>; it also gives you access to formatters of other providers, through the protected <code>$generator</code> property. The new formatters are the public methods of the provider class.</p>
+<p>Here is an example provider for populating Book data:</p>
+<pre class="highlight"><code class="language-php">namespace Faker\Provider;
+
+class Book extends \Faker\Provider\Base
+{
+  public function title($nbWords = 5)
+  {
+    $sentence = $this-&gt;generator-&gt;sentence($nbWords);
+    return substr($sentence, 0, strlen($sentence) - 1);
+  }
+
+  public function ISBN()
+  {
+    return $this-&gt;generator-&gt;ean13();
+  }
+}</code></pre>
+<p>To register this provider, just add a new instance of <code>\Faker\Provider\Book</code> to an existing generator:</p>
+<pre class="highlight"><code class="language-php">$faker-&gt;addProvider(new \Faker\Provider\Book($faker));</code></pre>
+<p>Now you can use the two new formatters like any other Faker formatter:</p>
+<pre class="highlight"><code class="language-php">$book = new Book();
+$book-&gt;setTitle($faker-&gt;title());
+$book-&gt;setISBN($faker-&gt;ISBN());
+$book-&gt;setSummary($faker-&gt;text());
+$book-&gt;setPrice($faker-&gt;randomNumber(2));</code></pre>
+<details class="tip" open="open"><summary>Tip</summary><p>A provider can also be a Plain Old PHP Object. In that case, all the public methods of the provider become available to the generator.</p>
+</details>
+<h2 id="language-specific-formatters">Language specific formatters<a class="headerlink" href="#language-specific-formatters" title="Permanent link">#</a></h2>
+<p>Supported locales can be found under the "Locales" header on the left.</p>
+<h3 id="misnamed-locales">Misnamed locales<a class="headerlink" href="#misnamed-locales" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Current name</th>
+<th>Correct name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>at_AT</code></td>
+<td><code>de_AT</code></td>
+</tr>
+<tr>
+<td><code>zh_CN</code></td>
+<td><code>zh_Hans_CN</code></td>
+</tr>
+<tr>
+<td><code>zh_TW</code></td>
+<td><code>zh_Hant_TW</code></td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.localeplanet.com/icu/">https://www.localeplanet.com/icu/</a></p>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h2>
+<p>Faker is released under the MIT License. See the bundled LICENSE file for details.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="formatters.html" class="md-footer__link md-footer__link--next" aria-label="Next: Available Formatters" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Available Formatters
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/FakerPHP/Faker" target="_blank" rel="noopener" title="Faker repository" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/FakerPHP/fakerphp.github.io" target="_blank" rel="noopener" title="Docs repository" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
+      
+        <script src="javascripts/highlight.js"></script>
+      
+    
+  </body>
+</html>
