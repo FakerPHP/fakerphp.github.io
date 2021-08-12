@@ -88,7 +88,7 @@ echo $faker->languageCode();
 
 ## `currencyCode`
 
-Generate a random [current code](https://en.wikipedia.org/wiki/ISO_4217) `string`.
+Generate a random [currency code](https://en.wikipedia.org/wiki/ISO_4217) `string`.
 
 ```php
 echo $faker->currencyCode();
