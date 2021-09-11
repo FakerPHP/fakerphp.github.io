@@ -16,7 +16,8 @@
 - [`jzonta/faker-restaurant`](https://github.com/jzonta/FakerRestaurant): Faker for Food and Beverage names generate
 - [`aalaap/faker-youtube`](https://github.com/aalaap/faker-youtube): Faker for YouTube URLs in various formats
 - [`pelmered/fake-car`](https://github.com/pelmered/fake-car): Faker for cars and car data
-- [`bluemmb/faker-picsum-photos-provider`](https://github.com/bluemmb/Faker-PicsumPhotos): Generate images using [picsum.photos](http://picsum.photos/)
+- [`bluemmb/faker-picsum-photos-provider`](https://github.com/bluemmb/Faker-PicsumPhotos): Generate images using [picsum.photos](http://picsum.photos/) (imageUrl() only)
+- [`smknstd/fakerphp-picsum-images`](https://github.com/smknstd/fakerphp-picsum-images): Generate images using [picsum.photos](http://picsum.photos/) (both image() and imageUrl())
 - [`xvladqt/faker-lorem-flickr`](https://github.com/xvladxtremal/Faker-LoremFlickr): Generate images using [loremflickr.com](http://loremflickr.com/)
 - [`ottaviano/faker-gravatar`](https://github.com/ottaviano/faker-gravatar): Generate avatars using [Gravatar](https://en.gravatar.com/site/implement/images/)
 - [`finwe/phpstan-faker`](https://github.com/finwe/phpstan-faker): PHPStan extension for Faker methods
