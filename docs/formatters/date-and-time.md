@@ -178,7 +178,7 @@ An optional second parameter can be supplied, with the timezone.
 ```php
 echo $faker->dateTimeThisMonth();
 
-// a date somewhere in this months
+// a date somewhere in this month
 
 echo $faker->dateTimeThisMonth('+12 days');
 
