@@ -1,6 +1,6 @@
 # HTML Lorem
 
-## `htmlLorem`
+## `randomHtml`
 
 Generate a random HTML `string`, with a given maximum depth and width. By default, the depth and width are `4`.
 
