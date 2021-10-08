@@ -7,7 +7,7 @@ Generates a random integer from 0 until 9.
 ```php
 echo $faker->randomDigit();
 
-// an integer between 0 and 10
+// an integer between 0 and 9
 ```
 
 ## `randomDigitNot`
@@ -17,7 +17,7 @@ Generates a random integer from 0 until 9, excluding a given number.
 ```php
 echo $faker->randomDigitNot(2);
 
-// 1, 3, 4, 5, 6, 7, 8 or 9
+// 0, 1, 3, 4, 5, 6, 7, 8 or 9
 ```
 
 ## `randomDigitNotNull`
@@ -27,7 +27,7 @@ Generates a random integer from 1 until 9.
 ```php
 echo $faker->randomDigitNotNull();
 
-// an integer between 1 and 10
+// an integer between 1 and 9
 ```
 
 ## `randomNumber`
