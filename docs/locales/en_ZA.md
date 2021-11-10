@@ -26,3 +26,29 @@ echo $faker->tollFreeNumber(); // 0800 555 5555
 // Generates a mobile phone number
 echo $faker->mobileNumber(); // 082 123 5555
 ```
+
+### `Faker\Provider\en_ZA\Address`
+
+```php
+// Generates a city prefix
+echo $faker->cityPrefix(); // East
+
+// Generates a secondary address
+echo $faker->secondaryAddress(); // Appt. 350
+
+// Generates a province
+echo $faker->province(); // Gauteng
+
+// Generates a province abbreviation
+echo $faker->provinceAbbr(); // GP
+```
+
+### `Faker\Provider\en_ZA\Internet`
+
+```php
+// Generates a free email domain
+echo $faker->freeEmailDomain(); // webmail.co.za
+
+// Generates a random TLD for South Africa
+echo $faker->tld(); // co.za
+```
