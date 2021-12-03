@@ -12,9 +12,18 @@ theme:
     text: 'Nunito'
     code: 'Fira Code'
   palette:
-    scheme: preference
-    primary: blue
-    accent: blue
+    - scheme: default
+      primary: blue
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   favicon: images/favicon.ico
   logo: images/logo.svg
   icon:
