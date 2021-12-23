@@ -3,8 +3,8 @@
 ### `Faker\Provider\it_IT\Company`
 
 ```php
-// Generates a random Vat Id
-echo $faker->vatId(); // "IT98746784967"
+// Generates a random VAT ID (partita IVA)
+echo $faker->vat(); // "IT98746784967"
 ```
 
 ### `Faker\Provider\it_IT\Payment`
