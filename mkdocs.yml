@@ -63,6 +63,7 @@ extra:
     - locales/en_US.md
     - locales/en_ZA.md
     - locales/es_ES.md
+    - locales/es_MX.md
     - locales/es_PE.md
     - locales/es_VE.md
     - locales/fa_IR.md
