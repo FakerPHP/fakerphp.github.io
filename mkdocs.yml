@@ -38,7 +38,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/FakerPHP/Faker
       name: Faker repository
-    - icon: fontawesome/regular/file-alt
+    - icon: fontawesome/regular/file-lines
       link: https://github.com/FakerPHP/fakerphp.github.io
       name: Docs repository
   locales: &locales
