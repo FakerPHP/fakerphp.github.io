@@ -59,3 +59,14 @@ echo $faker->internetExplorer();
 
 // 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 5.0; Trident/5.1)'
 ```
+
+
+## `msedge`
+
+Generate a user agent that belongs to Microsoft Ege.
+
+```php
+echo $faker->msedge();
+
+// 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36 Edg/99.0.1150.36'
+```
