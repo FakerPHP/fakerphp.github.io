@@ -13,7 +13,8 @@ function imageUrl(
     ?string $category = null, /* used as text on the image */
     bool $randomize = true,
     ?string $word = null,
-    bool $gray = false
+    bool $gray = false,
+    string $format = 'png'
 ): string;
 ```
 
@@ -31,6 +32,10 @@ echo $faker->imageUrl(360, 360, 'animals', true, 'cats');
 echo $faker->imageUrl(360, 360, 'animals', true, 'dogs', true);
 
 // https://via.placeholder.com/360x360.png/CCCCCC?text=animals+dogs+veniam
+
+echo $faker->imageUrl(360, 360, 'animals', true, 'dogs', true, 'jpg');
+
+// https://via.placeholder.com/360x360.jpg/CCCCCC?text=animals+dogs+veniam
 ```
 
 ## `image`
@@ -50,7 +55,8 @@ function image(
     bool $fullPath = true,
     bool $randomize = true,
     ?string $word = null,
-    bool $gray = false
+    bool $gray = false,
+    string $format = 'png'
 )
 ```
 
@@ -68,4 +74,8 @@ echo $faker->image(null, 360, 360, 'animals', true);
 echo $faker->image(null, 360, 360, 'animals', true, true, 'cats', true);
 
 // '/tmp/9444227f06f0b024a14688ef3b31fe7a.png'
+
+echo $faker->image(null, 360, 360, 'animals', true, true, 'cats', true, 'gif');
+
+// '/tmp/9444227f06f0b024a14688ef3b31fe7a.gif'
 ```
