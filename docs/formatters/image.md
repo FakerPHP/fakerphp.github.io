@@ -75,7 +75,7 @@ echo $faker->image(null, 360, 360, 'animals', true, true, 'cats', true);
 
 // '/tmp/9444227f06f0b024a14688ef3b31fe7a.png'
 
-echo $faker->image(null, 360, 360, 'animals', true, true, 'cats', true, 'gif');
+echo $faker->image(null, 360, 360, 'animals', true, true, 'cats', true, 'jpg');
 
-// '/tmp/9444227f06f0b024a14688ef3b31fe7a.gif'
+// '/tmp/9444227f06f0b024a14688ef3b31fe7a.jpg'
 ```
