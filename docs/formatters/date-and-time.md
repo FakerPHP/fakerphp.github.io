@@ -293,4 +293,8 @@ Generate a random timezone name.
 echo $faker->timezone();
 
 // 'Europe/Amsterdam', 'America/Montreal'
+
+echo $faker->timezone('US');
+
+// 'America/New_York', 'America/Los_Angeles'
 ```
