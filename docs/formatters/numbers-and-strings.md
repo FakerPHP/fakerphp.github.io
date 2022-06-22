@@ -106,7 +106,7 @@ echo $faker->randomElements(['a', 'b', 'c', 'd', 'e'], 3);
 
 ## `randomElement`
 
-Returns `$count` amount of random element from the given array. By default, the `$count` parameter is set to 1.
+Returns a random element from the given array.
 
 ```php
 echo $faker->randomElement(['a', 'b', 'c', 'd', 'e']);
