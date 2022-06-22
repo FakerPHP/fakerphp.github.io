@@ -114,6 +114,16 @@ echo $faker->randomElement(['a', 'b', 'c', 'd', 'e']);
 // 'c'
 ```
 
+## `randomKey`
+
+Returns a random key from the given array.
+
+```php
+echo $faker->randomKey(['a' => 1, 'b' => 2, 'c' => 3]);
+
+// 'b'
+```
+
 ## `shuffle`
 
 Returns a shuffled version of either an array or string.
