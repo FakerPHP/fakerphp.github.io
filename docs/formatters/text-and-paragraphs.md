@@ -115,7 +115,7 @@ echo $faker->paragraphs(2, true);
 
 ##  `text`
 
-Generate a random string of text, with the given amount of words. By default, `200` is used as input.
+Generate a random string of text. The first parameter represents the maximum number of characters the text should contain (by default, `200`).
 
 ```php
 echo $faker->text();
