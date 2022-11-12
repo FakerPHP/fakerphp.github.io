@@ -10,11 +10,18 @@ echo $faker->nationalCode(); // "0078475759"
 ### `Faker\Provider\fa_IR\Address`
 
 ```php
-// Generates a random building name
-echo $faker->building(); // "ساختمان آفتاب"
+echo $faker->city(); // "رفسنجان"
 
-// Returns a random city name
-echo $faker->city(); // "استان زنجان"
+echo $faker->stateName(); // "کرمان"
+
+echo $faker->streetName(); // "خیابان آفتاب"
+
+echo $faker->streetAddress(); // "رفسنجان - خیابان آفتاب"
+
+echo $faker->postcode(); //?  "4730815600"
+
+echo $faker->address(); // "کرمان - رفسنجان - خیابان آفتاب - کد پستی 4730815600"
+
 ```
 
 ### `Faker\Provider\fa_IR\Company`
