@@ -10,3 +10,4 @@
 - [`smknstd/fakerphp-picsum-images`](https://github.com/smknstd/fakerphp-picsum-images): Generate images using [picsum.photos](http://picsum.photos/) (both image() and imageUrl())
 - [`xvladqt/faker-lorem-flickr`](https://github.com/xvladxtremal/Faker-LoremFlickr): Generate images using [loremflickr.com](http://loremflickr.com/)
 - [`ottaviano/faker-gravatar`](https://github.com/ottaviano/faker-gravatar): Generate avatars using [Gravatar](https://en.gravatar.com/site/implement/images/)
+- [`dlnsk/faker-sequence`](https://github.com/dlnsk/faker-sequence): Generate incrementing, decrementing and manual sequences.
