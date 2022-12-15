@@ -31,6 +31,7 @@ echo $faker->mobileNumber(); // "07## ### ###"
 ```
 
 ### Publishable and GDPR safe number series
+
 The [Swedish Post and Telecom Authority (PTS) have reserved number series](https://www.pts.se/sv/bransch/telefoni/nummer-och-adressering/telefonnummer-for-anvandning-i-bocker-och-filmer-etc/) that are safe to use in relation to European GDPR laws.
 <br>The numbers will never be used by any subscriber wich also makes them safe to publish in books, movies, TV series etc. 
 
