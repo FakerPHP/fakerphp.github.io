@@ -12,7 +12,7 @@ It's heavily inspired by Perl's [Data::Faker](https://metacpan.org/pod/Data::Fak
 Faker requires PHP >= 7.4.
 
 ```shell
-composer require fakerphp/faker
+composer require --dev fakerphp/faker
 ```
 
 ## Basic Usage
