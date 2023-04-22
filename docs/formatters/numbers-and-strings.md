@@ -140,7 +140,7 @@ echo $faker->shuffle([1, 2, 3]);
 
 ## `numerify`
 
-Generate a string where all `#` characters are replaced by digits between 0 and 10. By default, `###` is used as input.
+Generate a string where all `#` characters are replaced by digits between 0 and 9. By default, `###` is used as input.
 
 ```php
 echo $faker->numerify();
