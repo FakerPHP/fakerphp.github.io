@@ -92,10 +92,27 @@ echo $faker->randomLetter();
 
 ## `randomElements`
 
-Returns `$count` amount of random element from the given array. By default, the `$count` parameter is set to 1.
+Returns `$count` amount of random element from the given array, traversable, or enum. By default, the `$count` parameter is set to 1.
 
 ```php
 echo $faker->randomElements(['a', 'b', 'c', 'd', 'e']);
+
+// ['c']
+
+echo $faker->randomElements(new \ArrayIterator(['a', 'b', 'c', 'd', 'e']));
+
+// ['c']
+
+enum Bar
+{
+    case A = 'a';
+    case B = 'b';
+    case C = 'c';
+    case D = 'd';
+    case E = 'e';
+}
+
+echo $faker->randomElements(Bar::class);
 
 // ['c']
 
@@ -106,10 +123,27 @@ echo $faker->randomElements(['a', 'b', 'c', 'd', 'e'], 3);
 
 ## `randomElement`
 
-Returns a random element from the given array.
+Returns a random element from the given array, traversable, or enum.
 
 ```php
 echo $faker->randomElement(['a', 'b', 'c', 'd', 'e']);
+
+// 'c'
+
+echo $faker->randomElement(new \ArrayIterator(['a', 'b', 'c', 'd', 'e']));
+
+// 'c'
+
+enum Bar
+{
+    case A = 'a';
+    case B = 'b';
+    case C = 'c';
+    case D = 'd';
+    case E = 'e';
+}
+
+echo $faker->randomElement(Bar::class);
 
 // 'c'
 ```
