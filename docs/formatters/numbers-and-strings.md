@@ -92,12 +92,16 @@ echo $faker->randomLetter();
 
 ## `randomElements`
 
-Returns `$count` amount of random element from the given array, traversable, or enum. By default, the `$count` parameter is set to 1.
+Returns `$count` amount of random element from the given array, traversable, or enum. By default, the `$count` parameter is set to 1, when `null` a random number of elements is returned.
 
 ```php
 echo $faker->randomElements(['a', 'b', 'c', 'd', 'e']);
 
 // ['c']
+
+echo $faker->randomElements(['a', 'b', 'c', 'd', 'e'], null);
+
+// ['c', 'a', 'e']
 
 echo $faker->randomElements(new \ArrayIterator(['a', 'b', 'c', 'd', 'e']));
 
