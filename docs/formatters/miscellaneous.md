@@ -99,7 +99,7 @@ echo $faker->currencyCode();
 ## `emoji`
 
 Generate a random emoji.
-K
+
 ```php
 echo $faker->emoji();
 
