@@ -3,6 +3,7 @@
 ## `boolean`
 
 Generate a random `bool`.
+Optionally, an integer parameter between 0 (always get false) and 100 (always get true) can be supplied. The greater the number, the more the chance of getting true.
 
 ```php
 echo $faker->boolean();
