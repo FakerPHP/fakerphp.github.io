@@ -1,5 +1,11 @@
 # Image
 
+!!! bug "Placeholder.com has shut down"
+
+    As a result, this formatter will no longer function.
+
+    Using any of the methods documented below will result in an error.
+
 ## `imageUrl`
 
 Get a random image URL from [placeholder.com](https://placeholder.com).
