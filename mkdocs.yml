@@ -1,5 +1,6 @@
 site_name: FakerPHP / Faker
 site_description: Documentation for FakerPHP / Faker
+site_url: https://fakerphp.org
 
 repo_name: FakerPHP/Faker
 repo_url: https://github.com/FakerPHP/Faker
