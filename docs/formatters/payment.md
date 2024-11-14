@@ -13,7 +13,7 @@ echo $faker->creditCardType();
 ## `creditCardNumber`
 
 Generate a credit card number with a given type. By default, a random type is used. Supported types are 'Visa', '
-MasterCard', 'American Express', and 'Discover'.
+MasterCard', 'American Express', and 'Discover Card'.
 
 Optionally, a second and third parameter may be supplied. These define if the credit card number should be formatted,
 and which separator to use.
