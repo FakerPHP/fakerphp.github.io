@@ -207,8 +207,8 @@ echo $faker->lexify('id-????');
 
 ## `bothify`
 
-Generate a string where `?` characters are replaced with a random letter, and `#` characters are replaces with a random
-digit between 0 and 9. By default, `## ??` is used as input.
+Generate a string where `?` characters are replaced with a random letter, `#` characters are replaced with a random
+digit between 0 and 9, and `*` characters are replaced with either a random letter or a random digit. By default, `## ??` is used as input.
 
 ```php
 echo $faker->bothify();
