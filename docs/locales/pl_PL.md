@@ -42,7 +42,7 @@ echo $faker->licensePlate(false, ['zachodniopomorskie', 'świętokrzyskie']); //
 // Generates a random Polish vehicle registration number for specific counties
 echo $faker->licensePlate(false, ['warmińsko-mazurskie'], ['nidzicki', 'olecki']); // "NOE 35807"
 // Generates a random Polish license plate of Border Service or Police
-echo $faker->licensePlate(true, ['services'], ['Straż Graniczna', 'Policja']); // "UG 822PC"
+echo $faker->licensePlate(true, ['services'], ['Straż Graniczna', 'Policja']); // "HWA NB41", "HPG 806HV"
 // Generates a random Polish army license plate
 echo $faker->licensePlate(true, ['army']); // "UG 822PC"
 ```
