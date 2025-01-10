@@ -4,8 +4,11 @@
 
 Generate a random `bool`.
 
+Optionally, a float (between 0.0 and 1.0) or an integer (between 0 and 100) can be passed, which changes the chance of getting `true`.
+
 ```php
-echo $faker->boolean();
+// 50% chance of true
+echo $faker->boolean(0.5);
 
 // true, true, false
 ```
