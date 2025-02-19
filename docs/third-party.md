@@ -11,3 +11,4 @@
 - [`smknstd/fakerphp-picsum-images`](https://github.com/smknstd/fakerphp-picsum-images): Generate images using [picsum.photos](http://picsum.photos/) (both image() and imageUrl())
 - [`xvladqt/faker-lorem-flickr`](https://github.com/xvladxtremal/Faker-LoremFlickr): Generate images using [loremflickr.com](http://loremflickr.com/)
 - [`zenstruck/foundry`](https://github.com/zenstruck/foundry): Fixtures/object generator for Symfony that uses Faker as a data generator.
+- [`jonpurvis/faker-stripe`](https://github.com/JonPurvis/faker-stripe): Generates fake, but structurally correct IDs for Stripe API resources.
