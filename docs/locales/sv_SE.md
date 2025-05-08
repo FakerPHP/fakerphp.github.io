@@ -14,7 +14,11 @@ echo $faker->bankAccountNumber(); // "SE5018548608468284909192"
 echo $faker->personalIdentityNumber(); // '950910-0799'
 
 // Since the numbers are different for male and female persons, optionally you can specify gender.
-echo $faker->personalIdentityNumber('female'); // '950910-0781'
+echo $faker->personalIdentityNumber(null, 'female'); // '950910-0781'
+
+// To include century 
+echo $faker->personalIdentityNumber(null, null, true); // '19950910-0781'
+
 ```
 
 ### `Faker\Provider\sv_SE\MobileNumber`
@@ -37,7 +41,7 @@ The [Swedish Post and Telecom Authority (PTS) has reserved a series of numbers](
 
 ```php
 //Publishable Swedish mobile phone number series
-echo '070-1740' . $faker->faker->numberBetween(605, 699);
+echo '070-1740' . $faker->numberBetween(605, 699);
 
 //Publishable Swedish landline phone number series
 echo '031-3900' . $faker->numberBetween(600, 699);
