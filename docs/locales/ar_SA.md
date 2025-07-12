@@ -10,9 +10,9 @@ echo $faker->subdivision(); // "منطقة الرياض"
 ### `Faker\Provider\ar_SA\Company`
 
 ```php
+echo $faker->jobTitle(); // "مهندس كهربائي"
 echo $faker->companyIdNumber(); // "7008914645"
 ```
-
 
 ### `Faker\Provider\ar_SA\Payment`
 
@@ -27,4 +27,3 @@ echo $faker->idNumber();          // ID number
 echo $faker->nationalIdNumber();  // Citizen ID number
 echo $faker->foreignerIdNumber(); // Foreigner ID number
 ```
-
