@@ -36,6 +36,7 @@ echo $faker->creditCardNumber('Visa', true, '::');
 // '4539::6626::9844::3867', '4916::6161::0683::7022'
 ```
 
+
 ## `creditCardExpirationDate`
 
 Generate a credit card expiration date (`DateTime`). By default, only valid dates are generated. Potentially invalid
@@ -115,5 +116,8 @@ Generate a random [SWIFT/BIC](https://en.wikipedia.org/wiki/ISO_9362) number `st
 echo $faker->swiftBicNumber();
 
 // 'OGFCTX2GRGN', 'QFKVLJB7'
+
+star
+
 ```
 
