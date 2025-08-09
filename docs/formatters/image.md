@@ -1,14 +1,8 @@
 # Image
 
-!!! bug "Placeholder.com has shut down"
-
-    As a result, this formatter will no longer function.
-
-    Using any of the methods documented below will result in an error.
-
 ## `imageUrl`
 
-Get a random image URL from [placeholder.com](https://placeholder.com).
+Get a random image URL from [placehold.co](https://placehold.co).
 
 To provide a less verbose explanation of this function, we'll use a function definition here:
 
@@ -29,24 +23,24 @@ Below, a few examples of possible parameter combinations:
 ```php
 echo $faker->imageUrl(640, 480, 'animals', true);
 
-// 'https://via.placeholder.com/640x480.png/004466?text=animals+omnis'
+// 'https://placehold.co/640x480/004466/FFFFFF/png?text=animals+omnis'
 
 echo $faker->imageUrl(360, 360, 'animals', true, 'cats');
 
-// 'https://via.placeholder.com/360x360.png/00bbcc?text=animals+cats+vero'
+// 'https://placehold.co/360x360/00bbcc/000000/png?text=animals+cats+vero'
 
 echo $faker->imageUrl(360, 360, 'animals', true, 'dogs', true);
 
-// https://via.placeholder.com/360x360.png/CCCCCC?text=animals+dogs+veniam
+// https://placehold.co/360x360/CCCCCC/000000/png?text=animals+dogs+veniam
 
 echo $faker->imageUrl(360, 360, 'animals', true, 'dogs', true, 'jpg');
 
-// https://via.placeholder.com/360x360.jpg/CCCCCC?text=animals+dogs+veniam
+// https://placehold.co/360x360/CCCCCC/000000/jpg?text=animals+dogs+veniam
 ```
 
 ## `image`
 
-Get a random `image` from [placeholder.com](https://placeholder.com) and download it to a directory (`$dir`). The full
+Get a random `image` from [placehold.co](https://placehold.co) and download it to a directory (`$dir`). The full
 path of the image is returned as a `string`.
 
 All the parameters are the same as `imageUrl`. Except an extra first parameter, this defines where the
