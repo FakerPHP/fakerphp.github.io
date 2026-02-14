@@ -4,7 +4,7 @@
 
 ```php
 // Generates a Peruvian Documento Nacional de Identidad (DNI) number
-echo $faker->dni(); // '83367512'
+echo $faker->dni(); // '73728193'
 ```
 
 ### `Faker\Provider\es_PE\Company`
