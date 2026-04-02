@@ -17,7 +17,7 @@ Generate a random file extension type `string`.
 ```php
 $faker->fileExtension();
 
-// 'deb', 'mp4s', 'uvg'
+// 'deb', 'mp4s', 'uvg', 'application'
 ```
 
 ## `file`
