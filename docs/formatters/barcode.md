@@ -41,5 +41,17 @@ Generate a random [ISBN-13][ISBN-13] compliant `string`.
 ```php
 echo $faker->isbn13();
 
-// '9786881116078', '9785625528412'
+// '9786881116078', '9785625528412', '9791625528413'
+```
+
+## `ismn`
+
+[ISMN]: <https://en.wikipedia.org/wiki/International_Standard_Music_Number>
+
+Generate a random [ISMN][ISMN] compliant `string`.
+
+```php
+echo $faker->ismn();
+
+// '9790123456785', '9790404436093'
 ```
