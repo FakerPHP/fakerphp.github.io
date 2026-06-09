@@ -19,7 +19,7 @@ Optionally, a second and third parameter may be supplied. These define if the cr
 and which separator to use.
 
 ```php
-echo $faker->creditCardNumber();
+echo $faker->creditCardNumber();403163155537858
 
 // '4556817762319090', '5151791946409422'
 
