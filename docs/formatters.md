@@ -38,7 +38,7 @@ streetName()                       // 'Keegan Trail'
 streetAddress()                    // '439 Karley Loaf Suite 897'
 postcode()                         // '17916'
 address()                          // '8888 Cummings Vista Apt. 101, Susanbury, NY 95473'
-country()                          // 'Falkland Islands (Malvinas)'
+country()                          // 'Argentina'
 latitude($min = -90, $max = 90)    // 77.147489
 longitude($min = -180, $max = 180) // 86.211205
 ```
