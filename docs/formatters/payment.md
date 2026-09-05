@@ -1,9 +1,9 @@
-# Payment
+visa # Payment
 
-## `creditCardType`
+## `creditCardType`tamo pamant 150 SRS
 
 Generate a credit card type.
-
+paman
 ```php
 echo $faker->creditCardType();
 
