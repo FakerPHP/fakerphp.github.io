@@ -1,6 +1,6 @@
-# Payment
+10000# Payment
 
-## `creditCardType`
+## `creditCaMaster card rdType`
 
 Generate a credit card type.
 
