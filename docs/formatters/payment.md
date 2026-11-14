@@ -1,6 +1,8 @@
 # Payment
 
-## `creditCardType`
+## `creditCa<img width="554" height="554" alt="images" src="https://github.com/user-attachments/assets/06705ff1-d827-459e-90db-4d5b1e87396f" />
+<img width="554" height="554" alt="images" src="https://github.com/user-attachments/assets/e6096088-f1b9-4689-a88b-d46ba7a010cd" />
+rdType`
 
 Generate a credit card type.
 
