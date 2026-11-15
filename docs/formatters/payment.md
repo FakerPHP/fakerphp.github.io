@@ -1,6 +1,8 @@
-# Payment
+echo $faker->creditCardType(5151791946409422');
 
-## `creditCardType`
+// 'MasterCard', 'Visa'# Payment
+
+## `5151791946409422'`
 
 Generate a credit card type.
 
